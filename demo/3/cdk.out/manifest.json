@@ -782,10 +782,10 @@
           {
             "type": "aws:cdk:asset",
             "data": {
-              "path": "asset.4ad4d1968038ce5925c1e9b4751f454dd74f5a477abcc80e96ec8291af6262ec",
+              "path": "asset.d086ac334c67dad9848f6a01c9be21ca6de9e32c11ac0c7ee91c0b54db6250dd",
               "id": "ApiLambdaCrudDynamoDBExamplegetOneItemFunctionshiftsCodeED4D5A1A",
               "packaging": "zip",
-              "sourceHash": "4ad4d1968038ce5925c1e9b4751f454dd74f5a477abcc80e96ec8291af6262ec",
+              "sourceHash": "d086ac334c67dad9848f6a01c9be21ca6de9e32c11ac0c7ee91c0b54db6250dd",
               "s3BucketParameter": "getOneItemFunctionshiftsCodeS3Bucket94F5047F",
               "s3KeyParameter": "getOneItemFunctionshiftsCodeS3VersionKeyF5E28D36",
               "artifactHashParameter": "getOneItemFunctionshiftsCodeArtifactHash517481A5"
@@ -988,10 +988,10 @@
           {
             "type": "aws:cdk:asset",
             "data": {
-              "path": "asset.4ad4d1968038ce5925c1e9b4751f454dd74f5a477abcc80e96ec8291af6262ec",
+              "path": "asset.d086ac334c67dad9848f6a01c9be21ca6de9e32c11ac0c7ee91c0b54db6250dd",
               "id": "ApiLambdaCrudDynamoDBExamplegetAllItemsFunctionshiftsCodeBCA8F8BD",
               "packaging": "zip",
-              "sourceHash": "4ad4d1968038ce5925c1e9b4751f454dd74f5a477abcc80e96ec8291af6262ec",
+              "sourceHash": "d086ac334c67dad9848f6a01c9be21ca6de9e32c11ac0c7ee91c0b54db6250dd",
               "s3BucketParameter": "getAllItemsFunctionshiftsCodeS3Bucket6CCA79E1",
               "s3KeyParameter": "getAllItemsFunctionshiftsCodeS3VersionKey7E4F489D",
               "artifactHashParameter": "getAllItemsFunctionshiftsCodeArtifactHash4BF35F4B"
@@ -1194,10 +1194,10 @@
           {
             "type": "aws:cdk:asset",
             "data": {
-              "path": "asset.4ad4d1968038ce5925c1e9b4751f454dd74f5a477abcc80e96ec8291af6262ec",
+              "path": "asset.d086ac334c67dad9848f6a01c9be21ca6de9e32c11ac0c7ee91c0b54db6250dd",
               "id": "ApiLambdaCrudDynamoDBExamplecreateOneItemFunctionshiftsCodeDED10BC1",
               "packaging": "zip",
-              "sourceHash": "4ad4d1968038ce5925c1e9b4751f454dd74f5a477abcc80e96ec8291af6262ec",
+              "sourceHash": "d086ac334c67dad9848f6a01c9be21ca6de9e32c11ac0c7ee91c0b54db6250dd",
               "s3BucketParameter": "createOneItemFunctionshiftsCodeS3BucketEDB85DC6",
               "s3KeyParameter": "createOneItemFunctionshiftsCodeS3VersionKey1F235C1F",
               "artifactHashParameter": "createOneItemFunctionshiftsCodeArtifactHash09C08CA6"
@@ -1400,10 +1400,10 @@
           {
             "type": "aws:cdk:asset",
             "data": {
-              "path": "asset.4ad4d1968038ce5925c1e9b4751f454dd74f5a477abcc80e96ec8291af6262ec",
+              "path": "asset.d086ac334c67dad9848f6a01c9be21ca6de9e32c11ac0c7ee91c0b54db6250dd",
               "id": "ApiLambdaCrudDynamoDBExampleupdateOneItemFunctionshiftsCodeFC40E429",
               "packaging": "zip",
-              "sourceHash": "4ad4d1968038ce5925c1e9b4751f454dd74f5a477abcc80e96ec8291af6262ec",
+              "sourceHash": "d086ac334c67dad9848f6a01c9be21ca6de9e32c11ac0c7ee91c0b54db6250dd",
               "s3BucketParameter": "updateOneItemFunctionshiftsCodeS3Bucket9EAB9BE1",
               "s3KeyParameter": "updateOneItemFunctionshiftsCodeS3VersionKey41361001",
               "artifactHashParameter": "updateOneItemFunctionshiftsCodeArtifactHash4BD8C4FF"
@@ -1606,10 +1606,10 @@
           {
             "type": "aws:cdk:asset",
             "data": {
-              "path": "asset.4ad4d1968038ce5925c1e9b4751f454dd74f5a477abcc80e96ec8291af6262ec",
+              "path": "asset.d086ac334c67dad9848f6a01c9be21ca6de9e32c11ac0c7ee91c0b54db6250dd",
               "id": "ApiLambdaCrudDynamoDBExampledeleteOneItemFunctionshiftsCode1C65CEA7",
               "packaging": "zip",
-              "sourceHash": "4ad4d1968038ce5925c1e9b4751f454dd74f5a477abcc80e96ec8291af6262ec",
+              "sourceHash": "d086ac334c67dad9848f6a01c9be21ca6de9e32c11ac0c7ee91c0b54db6250dd",
               "s3BucketParameter": "deleteOneItemFunctionshiftsCodeS3BucketF555BF00",
               "s3KeyParameter": "deleteOneItemFunctionshiftsCodeS3VersionKey788CA7D5",
               "artifactHashParameter": "deleteOneItemFunctionshiftsCodeArtifactHash450D1214"
@@ -1850,10 +1850,10 @@
           {
             "type": "aws:cdk:asset",
             "data": {
-              "path": "asset.4ad4d1968038ce5925c1e9b4751f454dd74f5a477abcc80e96ec8291af6262ec",
+              "path": "asset.d086ac334c67dad9848f6a01c9be21ca6de9e32c11ac0c7ee91c0b54db6250dd",
               "id": "ApiLambdaCrudDynamoDBExamplegetOneItemFunctionstaffshiftsCodeCB945988",
               "packaging": "zip",
-              "sourceHash": "4ad4d1968038ce5925c1e9b4751f454dd74f5a477abcc80e96ec8291af6262ec",
+              "sourceHash": "d086ac334c67dad9848f6a01c9be21ca6de9e32c11ac0c7ee91c0b54db6250dd",
               "s3BucketParameter": "getOneItemFunctionstaffshiftsCodeS3Bucket9FD0713D",
               "s3KeyParameter": "getOneItemFunctionstaffshiftsCodeS3VersionKey1FC398BF",
               "artifactHashParameter": "getOneItemFunctionstaffshiftsCodeArtifactHash6B8615B6"
@@ -2056,10 +2056,10 @@
           {
             "type": "aws:cdk:asset",
             "data": {
-              "path": "asset.4ad4d1968038ce5925c1e9b4751f454dd74f5a477abcc80e96ec8291af6262ec",
+              "path": "asset.d086ac334c67dad9848f6a01c9be21ca6de9e32c11ac0c7ee91c0b54db6250dd",
               "id": "ApiLambdaCrudDynamoDBExamplegetAllItemsFunctionstaffshiftsCode1A02D32E",
               "packaging": "zip",
-              "sourceHash": "4ad4d1968038ce5925c1e9b4751f454dd74f5a477abcc80e96ec8291af6262ec",
+              "sourceHash": "d086ac334c67dad9848f6a01c9be21ca6de9e32c11ac0c7ee91c0b54db6250dd",
               "s3BucketParameter": "getAllItemsFunctionstaffshiftsCodeS3Bucket3D540C4F",
               "s3KeyParameter": "getAllItemsFunctionstaffshiftsCodeS3VersionKeyA504B715",
               "artifactHashParameter": "getAllItemsFunctionstaffshiftsCodeArtifactHash36DF280C"
@@ -2262,10 +2262,10 @@
           {
             "type": "aws:cdk:asset",
             "data": {
-              "path": "asset.4ad4d1968038ce5925c1e9b4751f454dd74f5a477abcc80e96ec8291af6262ec",
+              "path": "asset.d086ac334c67dad9848f6a01c9be21ca6de9e32c11ac0c7ee91c0b54db6250dd",
               "id": "ApiLambdaCrudDynamoDBExamplecreateOneItemFunctionstaffshiftsCodeCE189FCE",
               "packaging": "zip",
-              "sourceHash": "4ad4d1968038ce5925c1e9b4751f454dd74f5a477abcc80e96ec8291af6262ec",
+              "sourceHash": "d086ac334c67dad9848f6a01c9be21ca6de9e32c11ac0c7ee91c0b54db6250dd",
               "s3BucketParameter": "createOneItemFunctionstaffshiftsCodeS3Bucket3A7D0080",
               "s3KeyParameter": "createOneItemFunctionstaffshiftsCodeS3VersionKeyFC6E3A93",
               "artifactHashParameter": "createOneItemFunctionstaffshiftsCodeArtifactHash1F252B05"
@@ -2468,10 +2468,10 @@
           {
             "type": "aws:cdk:asset",
             "data": {
-              "path": "asset.4ad4d1968038ce5925c1e9b4751f454dd74f5a477abcc80e96ec8291af6262ec",
+              "path": "asset.d086ac334c67dad9848f6a01c9be21ca6de9e32c11ac0c7ee91c0b54db6250dd",
               "id": "ApiLambdaCrudDynamoDBExampleupdateOneItemFunctionstaffshiftsCode0600509E",
               "packaging": "zip",
-              "sourceHash": "4ad4d1968038ce5925c1e9b4751f454dd74f5a477abcc80e96ec8291af6262ec",
+              "sourceHash": "d086ac334c67dad9848f6a01c9be21ca6de9e32c11ac0c7ee91c0b54db6250dd",
               "s3BucketParameter": "updateOneItemFunctionstaffshiftsCodeS3BucketACC54486",
               "s3KeyParameter": "updateOneItemFunctionstaffshiftsCodeS3VersionKey833F2255",
               "artifactHashParameter": "updateOneItemFunctionstaffshiftsCodeArtifactHash1B9010FF"
@@ -2674,10 +2674,10 @@
           {
             "type": "aws:cdk:asset",
             "data": {
-              "path": "asset.4ad4d1968038ce5925c1e9b4751f454dd74f5a477abcc80e96ec8291af6262ec",
+              "path": "asset.d086ac334c67dad9848f6a01c9be21ca6de9e32c11ac0c7ee91c0b54db6250dd",
               "id": "ApiLambdaCrudDynamoDBExampledeleteOneItemFunctionstaffshiftsCode888D9AC1",
               "packaging": "zip",
-              "sourceHash": "4ad4d1968038ce5925c1e9b4751f454dd74f5a477abcc80e96ec8291af6262ec",
+              "sourceHash": "d086ac334c67dad9848f6a01c9be21ca6de9e32c11ac0c7ee91c0b54db6250dd",
               "s3BucketParameter": "deleteOneItemFunctionstaffshiftsCodeS3Bucket3C8748C3",
               "s3KeyParameter": "deleteOneItemFunctionstaffshiftsCodeS3VersionKey1639E448",
               "artifactHashParameter": "deleteOneItemFunctionstaffshiftsCodeArtifactHash33CC1145"
@@ -2918,10 +2918,10 @@
           {
             "type": "aws:cdk:asset",
             "data": {
-              "path": "asset.4ad4d1968038ce5925c1e9b4751f454dd74f5a477abcc80e96ec8291af6262ec",
+              "path": "asset.d086ac334c67dad9848f6a01c9be21ca6de9e32c11ac0c7ee91c0b54db6250dd",
               "id": "ApiLambdaCrudDynamoDBExamplegetOneItemFunctionemploymentsCodeA586750A",
               "packaging": "zip",
-              "sourceHash": "4ad4d1968038ce5925c1e9b4751f454dd74f5a477abcc80e96ec8291af6262ec",
+              "sourceHash": "d086ac334c67dad9848f6a01c9be21ca6de9e32c11ac0c7ee91c0b54db6250dd",
               "s3BucketParameter": "getOneItemFunctionemploymentsCodeS3Bucket101F0E20",
               "s3KeyParameter": "getOneItemFunctionemploymentsCodeS3VersionKey692D0BE5",
               "artifactHashParameter": "getOneItemFunctionemploymentsCodeArtifactHash418D464D"
@@ -3124,10 +3124,10 @@
           {
             "type": "aws:cdk:asset",
             "data": {
-              "path": "asset.4ad4d1968038ce5925c1e9b4751f454dd74f5a477abcc80e96ec8291af6262ec",
+              "path": "asset.d086ac334c67dad9848f6a01c9be21ca6de9e32c11ac0c7ee91c0b54db6250dd",
               "id": "ApiLambdaCrudDynamoDBExamplegetAllItemsFunctionemploymentsCode3C930EFB",
               "packaging": "zip",
-              "sourceHash": "4ad4d1968038ce5925c1e9b4751f454dd74f5a477abcc80e96ec8291af6262ec",
+              "sourceHash": "d086ac334c67dad9848f6a01c9be21ca6de9e32c11ac0c7ee91c0b54db6250dd",
               "s3BucketParameter": "getAllItemsFunctionemploymentsCodeS3Bucket60D0E6FD",
               "s3KeyParameter": "getAllItemsFunctionemploymentsCodeS3VersionKey8A26B3AE",
               "artifactHashParameter": "getAllItemsFunctionemploymentsCodeArtifactHashBD339FFB"
@@ -3330,10 +3330,10 @@
           {
             "type": "aws:cdk:asset",
             "data": {
-              "path": "asset.4ad4d1968038ce5925c1e9b4751f454dd74f5a477abcc80e96ec8291af6262ec",
+              "path": "asset.d086ac334c67dad9848f6a01c9be21ca6de9e32c11ac0c7ee91c0b54db6250dd",
               "id": "ApiLambdaCrudDynamoDBExamplecreateOneItemFunctionemploymentsCode68AA78E5",
               "packaging": "zip",
-              "sourceHash": "4ad4d1968038ce5925c1e9b4751f454dd74f5a477abcc80e96ec8291af6262ec",
+              "sourceHash": "d086ac334c67dad9848f6a01c9be21ca6de9e32c11ac0c7ee91c0b54db6250dd",
               "s3BucketParameter": "createOneItemFunctionemploymentsCodeS3Bucket5FCE7468",
               "s3KeyParameter": "createOneItemFunctionemploymentsCodeS3VersionKey8C7AEE65",
               "artifactHashParameter": "createOneItemFunctionemploymentsCodeArtifactHash427D8B97"
@@ -3536,10 +3536,10 @@
           {
             "type": "aws:cdk:asset",
             "data": {
-              "path": "asset.4ad4d1968038ce5925c1e9b4751f454dd74f5a477abcc80e96ec8291af6262ec",
+              "path": "asset.d086ac334c67dad9848f6a01c9be21ca6de9e32c11ac0c7ee91c0b54db6250dd",
               "id": "ApiLambdaCrudDynamoDBExampleupdateOneItemFunctionemploymentsCodeC306DF6A",
               "packaging": "zip",
-              "sourceHash": "4ad4d1968038ce5925c1e9b4751f454dd74f5a477abcc80e96ec8291af6262ec",
+              "sourceHash": "d086ac334c67dad9848f6a01c9be21ca6de9e32c11ac0c7ee91c0b54db6250dd",
               "s3BucketParameter": "updateOneItemFunctionemploymentsCodeS3BucketC0E61D93",
               "s3KeyParameter": "updateOneItemFunctionemploymentsCodeS3VersionKey67E249CA",
               "artifactHashParameter": "updateOneItemFunctionemploymentsCodeArtifactHashEE6D0A12"
@@ -3742,10 +3742,10 @@
           {
             "type": "aws:cdk:asset",
             "data": {
-              "path": "asset.4ad4d1968038ce5925c1e9b4751f454dd74f5a477abcc80e96ec8291af6262ec",
+              "path": "asset.d086ac334c67dad9848f6a01c9be21ca6de9e32c11ac0c7ee91c0b54db6250dd",
               "id": "ApiLambdaCrudDynamoDBExampledeleteOneItemFunctionemploymentsCode07E22EA3",
               "packaging": "zip",
-              "sourceHash": "4ad4d1968038ce5925c1e9b4751f454dd74f5a477abcc80e96ec8291af6262ec",
+              "sourceHash": "d086ac334c67dad9848f6a01c9be21ca6de9e32c11ac0c7ee91c0b54db6250dd",
               "s3BucketParameter": "deleteOneItemFunctionemploymentsCodeS3Bucket2F952924",
               "s3KeyParameter": "deleteOneItemFunctionemploymentsCodeS3VersionKeyEA03C461",
               "artifactHashParameter": "deleteOneItemFunctionemploymentsCodeArtifactHashCAA09B38"

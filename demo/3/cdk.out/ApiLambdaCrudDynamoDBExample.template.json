@@ -1320,7 +1320,7 @@
       ],
       "Metadata": {
         "aws:cdk:path": "ApiLambdaCrudDynamoDBExample/getOneItemFunctionshifts/Resource",
-        "aws:asset:path": "asset.4ad4d1968038ce5925c1e9b4751f454dd74f5a477abcc80e96ec8291af6262ec",
+        "aws:asset:path": "asset.d086ac334c67dad9848f6a01c9be21ca6de9e32c11ac0c7ee91c0b54db6250dd",
         "aws:asset:property": "Code"
       }
     },
@@ -1561,7 +1561,7 @@
       ],
       "Metadata": {
         "aws:cdk:path": "ApiLambdaCrudDynamoDBExample/getAllItemsFunctionshifts/Resource",
-        "aws:asset:path": "asset.4ad4d1968038ce5925c1e9b4751f454dd74f5a477abcc80e96ec8291af6262ec",
+        "aws:asset:path": "asset.d086ac334c67dad9848f6a01c9be21ca6de9e32c11ac0c7ee91c0b54db6250dd",
         "aws:asset:property": "Code"
       }
     },
@@ -1802,7 +1802,7 @@
       ],
       "Metadata": {
         "aws:cdk:path": "ApiLambdaCrudDynamoDBExample/createOneItemFunctionshifts/Resource",
-        "aws:asset:path": "asset.4ad4d1968038ce5925c1e9b4751f454dd74f5a477abcc80e96ec8291af6262ec",
+        "aws:asset:path": "asset.d086ac334c67dad9848f6a01c9be21ca6de9e32c11ac0c7ee91c0b54db6250dd",
         "aws:asset:property": "Code"
       }
     },
@@ -2043,7 +2043,7 @@
       ],
       "Metadata": {
         "aws:cdk:path": "ApiLambdaCrudDynamoDBExample/updateOneItemFunctionshifts/Resource",
-        "aws:asset:path": "asset.4ad4d1968038ce5925c1e9b4751f454dd74f5a477abcc80e96ec8291af6262ec",
+        "aws:asset:path": "asset.d086ac334c67dad9848f6a01c9be21ca6de9e32c11ac0c7ee91c0b54db6250dd",
         "aws:asset:property": "Code"
       }
     },
@@ -2284,7 +2284,7 @@
       ],
       "Metadata": {
         "aws:cdk:path": "ApiLambdaCrudDynamoDBExample/deleteOneItemFunctionshifts/Resource",
-        "aws:asset:path": "asset.4ad4d1968038ce5925c1e9b4751f454dd74f5a477abcc80e96ec8291af6262ec",
+        "aws:asset:path": "asset.d086ac334c67dad9848f6a01c9be21ca6de9e32c11ac0c7ee91c0b54db6250dd",
         "aws:asset:property": "Code"
       }
     },
@@ -2552,7 +2552,7 @@
       ],
       "Metadata": {
         "aws:cdk:path": "ApiLambdaCrudDynamoDBExample/getOneItemFunctionstaff_shifts/Resource",
-        "aws:asset:path": "asset.4ad4d1968038ce5925c1e9b4751f454dd74f5a477abcc80e96ec8291af6262ec",
+        "aws:asset:path": "asset.d086ac334c67dad9848f6a01c9be21ca6de9e32c11ac0c7ee91c0b54db6250dd",
         "aws:asset:property": "Code"
       }
     },
@@ -2793,7 +2793,7 @@
       ],
       "Metadata": {
         "aws:cdk:path": "ApiLambdaCrudDynamoDBExample/getAllItemsFunctionstaff_shifts/Resource",
-        "aws:asset:path": "asset.4ad4d1968038ce5925c1e9b4751f454dd74f5a477abcc80e96ec8291af6262ec",
+        "aws:asset:path": "asset.d086ac334c67dad9848f6a01c9be21ca6de9e32c11ac0c7ee91c0b54db6250dd",
         "aws:asset:property": "Code"
       }
     },
@@ -3034,7 +3034,7 @@
       ],
       "Metadata": {
         "aws:cdk:path": "ApiLambdaCrudDynamoDBExample/createOneItemFunctionstaff_shifts/Resource",
-        "aws:asset:path": "asset.4ad4d1968038ce5925c1e9b4751f454dd74f5a477abcc80e96ec8291af6262ec",
+        "aws:asset:path": "asset.d086ac334c67dad9848f6a01c9be21ca6de9e32c11ac0c7ee91c0b54db6250dd",
         "aws:asset:property": "Code"
       }
     },
@@ -3275,7 +3275,7 @@
       ],
       "Metadata": {
         "aws:cdk:path": "ApiLambdaCrudDynamoDBExample/updateOneItemFunctionstaff_shifts/Resource",
-        "aws:asset:path": "asset.4ad4d1968038ce5925c1e9b4751f454dd74f5a477abcc80e96ec8291af6262ec",
+        "aws:asset:path": "asset.d086ac334c67dad9848f6a01c9be21ca6de9e32c11ac0c7ee91c0b54db6250dd",
         "aws:asset:property": "Code"
       }
     },
@@ -3516,7 +3516,7 @@
       ],
       "Metadata": {
         "aws:cdk:path": "ApiLambdaCrudDynamoDBExample/deleteOneItemFunctionstaff_shifts/Resource",
-        "aws:asset:path": "asset.4ad4d1968038ce5925c1e9b4751f454dd74f5a477abcc80e96ec8291af6262ec",
+        "aws:asset:path": "asset.d086ac334c67dad9848f6a01c9be21ca6de9e32c11ac0c7ee91c0b54db6250dd",
         "aws:asset:property": "Code"
       }
     },
@@ -3784,7 +3784,7 @@
       ],
       "Metadata": {
         "aws:cdk:path": "ApiLambdaCrudDynamoDBExample/getOneItemFunctionemployments/Resource",
-        "aws:asset:path": "asset.4ad4d1968038ce5925c1e9b4751f454dd74f5a477abcc80e96ec8291af6262ec",
+        "aws:asset:path": "asset.d086ac334c67dad9848f6a01c9be21ca6de9e32c11ac0c7ee91c0b54db6250dd",
         "aws:asset:property": "Code"
       }
     },
@@ -4025,7 +4025,7 @@
       ],
       "Metadata": {
         "aws:cdk:path": "ApiLambdaCrudDynamoDBExample/getAllItemsFunctionemployments/Resource",
-        "aws:asset:path": "asset.4ad4d1968038ce5925c1e9b4751f454dd74f5a477abcc80e96ec8291af6262ec",
+        "aws:asset:path": "asset.d086ac334c67dad9848f6a01c9be21ca6de9e32c11ac0c7ee91c0b54db6250dd",
         "aws:asset:property": "Code"
       }
     },
@@ -4266,7 +4266,7 @@
       ],
       "Metadata": {
         "aws:cdk:path": "ApiLambdaCrudDynamoDBExample/createOneItemFunctionemployments/Resource",
-        "aws:asset:path": "asset.4ad4d1968038ce5925c1e9b4751f454dd74f5a477abcc80e96ec8291af6262ec",
+        "aws:asset:path": "asset.d086ac334c67dad9848f6a01c9be21ca6de9e32c11ac0c7ee91c0b54db6250dd",
         "aws:asset:property": "Code"
       }
     },
@@ -4507,7 +4507,7 @@
       ],
       "Metadata": {
         "aws:cdk:path": "ApiLambdaCrudDynamoDBExample/updateOneItemFunctionemployments/Resource",
-        "aws:asset:path": "asset.4ad4d1968038ce5925c1e9b4751f454dd74f5a477abcc80e96ec8291af6262ec",
+        "aws:asset:path": "asset.d086ac334c67dad9848f6a01c9be21ca6de9e32c11ac0c7ee91c0b54db6250dd",
         "aws:asset:property": "Code"
       }
     },
@@ -4748,7 +4748,7 @@
       ],
       "Metadata": {
         "aws:cdk:path": "ApiLambdaCrudDynamoDBExample/deleteOneItemFunctionemployments/Resource",
-        "aws:asset:path": "asset.4ad4d1968038ce5925c1e9b4751f454dd74f5a477abcc80e96ec8291af6262ec",
+        "aws:asset:path": "asset.d086ac334c67dad9848f6a01c9be21ca6de9e32c11ac0c7ee91c0b54db6250dd",
         "aws:asset:property": "Code"
       }
     },
