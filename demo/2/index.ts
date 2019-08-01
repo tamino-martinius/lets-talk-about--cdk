@@ -6,6 +6,58 @@ import cdk = require('@aws-cdk/core');
 export class ApiLambdaCrudDynamoDBStack extends cdk.Stack {
   private defaultPrimaryKey = 'id';
 
+  buildLambdaParameters(tableName: string, handler: string) {
+    return {
+      handler,
+      code: new lambda.AssetCode('src'),
+      runtime: lambda.Runtime.NODEJS_10_X,
+      environment: {
+        TABLE_NAME: tableName,
+        PRIMARY_KEY: this.defaultPrimaryKey,
+      },
+    };
+  }
+
+  buildGetOneLambda(tableName: string) {
+    return new lambda.Function(
+      this,
+      'getOneItemFunction',
+      this.buildLambdaParameters(tableName, 'get-one.handler'),
+    );
+  }
+
+  buildGetAllLambda(tableName: string) {
+    return new lambda.Function(
+      this,
+      'getAllItemsFunction',
+      this.buildLambdaParameters(tableName, 'get-all.handler'),
+    );
+  }
+
+  buildCreateOneLambda(tableName: string) {
+    return new lambda.Function(
+      this,
+      'createOneItemFunction',
+      this.buildLambdaParameters(tableName, 'create.handler'),
+    );
+  }
+
+  buildUpdateOneLambda(tableName: string) {
+    return new lambda.Function(
+      this,
+      'updateOneItemFunction',
+      this.buildLambdaParameters(tableName, 'update-one.handler'),
+    );
+  }
+
+  buildDeleteOneLambda(tableName: string) {
+    return new lambda.Function(
+      this,
+      'deleteOneItemFunction',
+      this.buildLambdaParameters(tableName, 'delete-one.handler'),
+    );
+  }
+
   constructor(app: cdk.App, id: string) {
     super(app, id);
 
@@ -21,67 +73,25 @@ export class ApiLambdaCrudDynamoDBStack extends cdk.Stack {
       tableName: 'shifts',
     });
 
-    const getOneLambda = new lambda.Function(this, 'getOneItemFunction', {
-      code: new lambda.AssetCode('src'),
-      handler: 'get-one.handler',
-      runtime: lambda.Runtime.NODEJS_10_X,
-      environment: {
-        TABLE_NAME: shiftsTable.tableName,
-        PRIMARY_KEY: this.defaultPrimaryKey,
-      },
-    });
-
-    const getAllLambda = new lambda.Function(this, 'getAllItemsFunction', {
-      code: new lambda.AssetCode('src'),
-      handler: 'get-all.handler',
-      runtime: lambda.Runtime.NODEJS_10_X,
-      environment: {
-        TABLE_NAME: shiftsTable.tableName,
-        PRIMARY_KEY: this.defaultPrimaryKey,
-      },
-    });
-
-    const createOne = new lambda.Function(this, 'createItemFunction', {
-      code: new lambda.AssetCode('src'),
-      handler: 'create.handler',
-      runtime: lambda.Runtime.NODEJS_10_X,
-      environment: {
-        TABLE_NAME: shiftsTable.tableName,
-        PRIMARY_KEY: this.defaultPrimaryKey,
-      },
-    });
-
-    const updateOne = new lambda.Function(this, 'updateItemFunction', {
-      code: new lambda.AssetCode('src'),
-      handler: 'update-one.handler',
-      runtime: lambda.Runtime.NODEJS_10_X,
-      environment: {
-        TABLE_NAME: shiftsTable.tableName,
-        PRIMARY_KEY: this.defaultPrimaryKey,
-      },
-    });
-
-    const deleteOne = new lambda.Function(this, 'deleteItemFunction', {
-      code: new lambda.AssetCode('src'),
-      handler: 'delete-one.handler',
-      runtime: lambda.Runtime.NODEJS_10_X,
-      environment: {
-        TABLE_NAME: shiftsTable.tableName,
-        PRIMARY_KEY: this.defaultPrimaryKey,
-      },
-    });
+    const getOneLambda = this.buildGetOneLambda(shiftsTable.tableName);
+    const getAllLambda = this.buildGetAllLambda(shiftsTable.tableName);
+    const createOneLambda = this.buildCreateOneLambda(shiftsTable.tableName);
+    const updateOneLambda = this.buildUpdateOneLambda(shiftsTable.tableName);
+    const deleteOneLambda = this.buildDeleteOneLambda(shiftsTable.tableName);
 
     shiftsTable.grantReadWriteData(getAllLambda);
     shiftsTable.grantReadWriteData(getOneLambda);
-    shiftsTable.grantReadWriteData(createOne);
-    shiftsTable.grantReadWriteData(updateOne);
-    shiftsTable.grantReadWriteData(deleteOne);
+    shiftsTable.grantReadWriteData(createOneLambda);
+    shiftsTable.grantReadWriteData(updateOneLambda);
+    shiftsTable.grantReadWriteData(deleteOneLambda);
 
     const shiftsRoute = api.root.addResource('shifts');
     const getAllIntegration = new apigateway.LambdaIntegration(getAllLambda);
     shiftsRoute.addMethod('GET', getAllIntegration);
 
-    const createOneIntegration = new apigateway.LambdaIntegration(createOne);
+    const createOneIntegration = new apigateway.LambdaIntegration(
+      createOneLambda,
+    );
     shiftsRoute.addMethod('POST', createOneIntegration);
     this.addCorsOptions(shiftsRoute);
 
@@ -89,10 +99,14 @@ export class ApiLambdaCrudDynamoDBStack extends cdk.Stack {
     const getOneIntegration = new apigateway.LambdaIntegration(getOneLambda);
     shiftsRouteById.addMethod('GET', getOneIntegration);
 
-    const updateOneIntegration = new apigateway.LambdaIntegration(updateOne);
+    const updateOneIntegration = new apigateway.LambdaIntegration(
+      updateOneLambda,
+    );
     shiftsRouteById.addMethod('PATCH', updateOneIntegration);
 
-    const deleteOneIntegration = new apigateway.LambdaIntegration(deleteOne);
+    const deleteOneIntegration = new apigateway.LambdaIntegration(
+      deleteOneLambda,
+    );
     shiftsRouteById.addMethod('DELETE', deleteOneIntegration);
     this.addCorsOptions(shiftsRouteById);
   }
