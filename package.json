@@ -1,6 +1,6 @@
 {
-  "name": "lets-talk-about--example",
-  "description": "Example for slides build with HTML and CSS.",
+  "name": "lets-talk-about--cdk",
+  "description": "Lets Talk about ... AWS Cloud Development Kit (CDK)",
   "author": "Tamino Martinius",
   "homepage": "https://github.com/tamino-martinius/lets-talk-about--example",
   "scripts": {
