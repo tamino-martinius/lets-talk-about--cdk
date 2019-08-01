@@ -10,10 +10,82 @@ html
   body
     section.slides.layout-regular.template-default
       article.build
-        h1 H1
-        h2 H2
-      article.image(data-src="node_modules/lets-talk-about--template/assets/memes/philosoraptor.jpg")
-        h1 Background Image
+        h1 Lets Talk about ...
+        h2 AWS Cloud Development Kit
+      article
+        h1 Lets Talk about ...
+        h2 CDK
+      article
+        h1 Agenda
+        ul.build
+          li Motivation
+          li CloudFormation
+          li Demo
+          li Summary
+      article.build
+        h1 Motivation
+        h2 How to build Infrastructure within AWS
+      article
+        h2 Manual
+        img(src="assets/images/aws-management-console.png", style="height: 40vh")
+        ul.build.horizontal
+          li 👍 <br>
+            span(style="font-size:2.5vw") Easy to start
+          li 🤔 <br>
+            span(style="font-size:2.5vw") Not reproduceable
+          li 🤔 <br>
+            span(style="font-size:2.5vw") Error prone
+          li 🤔 <br>
+            span(style="font-size:2.5vw") Time consuming
+      article
+        h2 Scripting
+        img(src="assets/images/aws-sdk.png", style="height: 40vh")
+        ul.build.horizontal
+          li 👍 <br>
+            span(style="font-size:2.5vw") Flexible
+          li 🤔 <br>
+            span(style="font-size:2.5vw") Error handling?
+          li 🤔 <br>
+            span(style="font-size:2.5vw") How to update?
+          li 🤔 <br>
+            span(style="font-size:2.5vw") How to roll back?
+      article
+        h2 CloudFormation
+        img(src="assets/images/aws-cloudformation.png", style="height: 40vh")
+        ul.build.horizontal
+          li 👍 <br>
+            span(style="font-size:2.5vw") Easy to automate
+          li 👍 <br>
+            span(style="font-size:2.5vw") Easy to reproduce
+          li 😒 <br>
+            span(style="font-size:2.5vw") Complicated syntax
+          li 😒 <br>
+            span(style="font-size:2.5vw") No abstraction
+      article
+        h2 Document Object Models (DOMs)
+        img(src="assets/images/troposphere.png", style="height: 40vh")
+        ul.build.horizontal
+          li 💚 <br>
+            span(style="font-size:2.5vw") Real Code
+          li 👍 <br>
+            span(style="font-size:2.5vw") Desired State
+          li 😒 <br>
+            span(style="font-size:2.5vw") No abstraction
+          li 😒 <br>
+            span(style="font-size:2.5vw") Limited languages
+      article
+        h2 Cloud Development Kit
+        img(src="assets/images/aws-cdk.png", style="height: 40vh")
+        ul.build.horizontal
+          li 💚 <br>
+            span(style="font-size:2.5vw") Real Code
+          li 💚 <br>
+            span(style="font-size:2.5vw") Build-in Abstraction
+          li 💚 <br>
+            span(style="font-size:2.5vw") Many languages
+          li 👍 <br>
+            span(style="font-size:2.5vw") Desired State
+
       article.image.cover(data-src="node_modules/lets-talk-about--template/assets/memes/philosoraptor.jpg")
         h1 Cover Image
       article
