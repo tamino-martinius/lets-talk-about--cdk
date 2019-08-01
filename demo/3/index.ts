@@ -65,13 +65,7 @@ export class ApiLambdaCrudDynamoDBStack extends cdk.Stack {
       restApiName: 'shyftplan API',
     });
 
-    const modelNames = [
-      'shifts',
-      'staff_shifts',
-      'employments',
-      'companys',
-      'users',
-    ];
+    const modelNames = ['shifts', 'staff_shifts', 'employments'];
 
     for (const modelName of modelNames) {
       const table = new dynamodb.Table(this, modelName, {

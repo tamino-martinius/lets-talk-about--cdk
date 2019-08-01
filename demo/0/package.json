@@ -1,0 +1,27 @@
+{
+  "name": "api-lambda-crud-dynamodb",
+  "version": "1.0.0",
+  "description": "Running an API Gateway with four Lambdas to do CRUD operations on DynamoDB",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "predeploy": "npm run synth",
+    "deploy": "cdk deploy --profile shyftplan-test",
+    "prediff": "npm run synth",
+    "diff": "cdk deploy --profile shyftplan-test",
+    "presynth": "npm run build",
+    "synth": "cdk synth --profile shyftplan-test"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^8.10.38",
+    "typescript": "^3.2.4"
+  },
+  "dependencies": {
+    "@aws-cdk/aws-apigateway": "*",
+    "@aws-cdk/aws-dynamodb": "*",
+    "@aws-cdk/aws-lambda": "*",
+    "@aws-cdk/core": "*"
+  }
+}

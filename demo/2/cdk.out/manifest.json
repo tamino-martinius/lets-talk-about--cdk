@@ -8,13 +8,317 @@
         "templateFile": "ApiLambdaCrudDynamoDBExample.template.json"
       },
       "metadata": {
+        "/ApiLambdaCrudDynamoDBExample/API/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "API62EA1CFF",
+            "trace": [
+              "new RestApi (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:28:26)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:11:21)",
+              "Object.<anonymous> (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:106:1)",
+              "Module._compile (module.js:652:30)",
+              "Object.Module._extensions..js (module.js:663:10)",
+              "Module.load (module.js:565:32)",
+              "tryModuleLoad (module.js:505:12)",
+              "Function.Module._load (module.js:497:3)",
+              "Function.Module.runMain (module.js:693:10)",
+              "startup (bootstrap_node.js:188:16)",
+              "bootstrap_node.js:609:3"
+            ]
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/API/Deployment/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "APIDeployment0E06874E5964ff7f6673cec28d5f1ee6edfc84cb",
+            "trace": [
+              "new Deployment (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-apigateway/lib/deployment.js:39:25)",
+              "RestApi.configureDeployment (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:171:38)",
+              "new RestApi (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:41:14)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:11:21)",
+              "Object.<anonymous> (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:106:1)",
+              "Module._compile (module.js:652:30)",
+              "Object.Module._extensions..js (module.js:663:10)",
+              "Module.load (module.js:565:32)",
+              "tryModuleLoad (module.js:505:12)",
+              "Function.Module._load (module.js:497:3)",
+              "Function.Module.runMain (module.js:693:10)",
+              "startup (bootstrap_node.js:188:16)",
+              "bootstrap_node.js:609:3"
+            ]
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/API/DeploymentStage.prod/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "APIDeploymentStageprod278E75BA",
+            "trace": [
+              "new Stage (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-apigateway/lib/stage.js:27:26)",
+              "RestApi.configureDeployment (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:179:36)",
+              "new RestApi (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:41:14)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:11:21)",
+              "Object.<anonymous> (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:106:1)",
+              "Module._compile (module.js:652:30)",
+              "Object.Module._extensions..js (module.js:663:10)",
+              "Module.load (module.js:565:32)",
+              "tryModuleLoad (module.js:505:12)",
+              "Function.Module._load (module.js:497:3)",
+              "Function.Module.runMain (module.js:693:10)",
+              "startup (bootstrap_node.js:188:16)",
+              "bootstrap_node.js:609:3"
+            ]
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/API/Endpoint": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "APIEndpoint1793E782",
+            "trace": [
+              "RestApi.configureDeployment (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:183:13)",
+              "new RestApi (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:41:14)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:11:21)",
+              "Object.<anonymous> (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:106:1)",
+              "Module._compile (module.js:652:30)",
+              "Object.Module._extensions..js (module.js:663:10)",
+              "Module.load (module.js:565:32)",
+              "tryModuleLoad (module.js:505:12)",
+              "Function.Module._load (module.js:497:3)",
+              "Function.Module.runMain (module.js:693:10)",
+              "startup (bootstrap_node.js:188:16)",
+              "bootstrap_node.js:609:3"
+            ]
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/API/CloudWatchRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "APICloudWatchRole927CEB3B",
+            "trace": [
+              "new Role (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-iam/lib/role.js:30:22)",
+              "RestApi.configureCloudWatchRole (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:192:22)",
+              "new RestApi (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:44:18)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:11:21)",
+              "Object.<anonymous> (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:106:1)",
+              "Module._compile (module.js:652:30)",
+              "Object.Module._extensions..js (module.js:663:10)",
+              "Module.load (module.js:565:32)",
+              "tryModuleLoad (module.js:505:12)",
+              "Function.Module._load (module.js:497:3)",
+              "Function.Module.runMain (module.js:693:10)",
+              "startup (bootstrap_node.js:188:16)",
+              "bootstrap_node.js:609:3"
+            ]
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/API/Account": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "APIAccountD065B313",
+            "trace": [
+              "RestApi.configureCloudWatchRole (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:196:26)",
+              "new RestApi (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:44:18)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:11:21)",
+              "Object.<anonymous> (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:106:1)",
+              "Module._compile (module.js:652:30)",
+              "Object.Module._extensions..js (module.js:663:10)",
+              "Module.load (module.js:565:32)",
+              "tryModuleLoad (module.js:505:12)",
+              "Function.Module._load (module.js:497:3)",
+              "Function.Module.runMain (module.js:693:10)",
+              "startup (bootstrap_node.js:188:16)",
+              "bootstrap_node.js:609:3"
+            ]
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/API/Default/shifts/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "APIshifts4B0E1F93",
+            "trace": [
+              "new Resource (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:66:26)",
+              "RootResource.addResource (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:12:16)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:31:38)",
+              "Object.<anonymous> (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:106:1)",
+              "Module._compile (module.js:652:30)",
+              "Object.Module._extensions..js (module.js:663:10)",
+              "Module.load (module.js:565:32)",
+              "tryModuleLoad (module.js:505:12)",
+              "Function.Module._load (module.js:497:3)",
+              "Function.Module.runMain (module.js:693:10)",
+              "startup (bootstrap_node.js:188:16)",
+              "bootstrap_node.js:609:3"
+            ]
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/API/Default/shifts/GET/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "APIshiftsGETADDD78F9",
+            "trace": [
+              "new Method (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-apigateway/lib/method.js:32:26)",
+              "Resource.addMethod (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:15:16)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:33:21)",
+              "Object.<anonymous> (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:106:1)",
+              "Module._compile (module.js:652:30)",
+              "Object.Module._extensions..js (module.js:663:10)",
+              "Module.load (module.js:565:32)",
+              "tryModuleLoad (module.js:505:12)",
+              "Function.Module._load (module.js:497:3)",
+              "Function.Module.runMain (module.js:693:10)",
+              "startup (bootstrap_node.js:188:16)",
+              "bootstrap_node.js:609:3"
+            ]
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/API/Default/shifts/POST/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "APIshiftsPOST92958661",
+            "trace": [
+              "new Method (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-apigateway/lib/method.js:32:26)",
+              "Resource.addMethod (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:15:16)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:35:21)",
+              "Object.<anonymous> (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:106:1)",
+              "Module._compile (module.js:652:30)",
+              "Object.Module._extensions..js (module.js:663:10)",
+              "Module.load (module.js:565:32)",
+              "tryModuleLoad (module.js:505:12)",
+              "Function.Module._load (module.js:497:3)",
+              "Function.Module.runMain (module.js:693:10)",
+              "startup (bootstrap_node.js:188:16)",
+              "bootstrap_node.js:609:3"
+            ]
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/API/Default/shifts/OPTIONS/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "APIshiftsOPTIONS02775CFF",
+            "trace": [
+              "new Method (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-apigateway/lib/method.js:32:26)",
+              "Resource.addMethod (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:15:16)",
+              "ApiLambdaCrudDynamoDBStack.addCorsOptions (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:73:21)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:36:14)",
+              "Object.<anonymous> (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:106:1)",
+              "Module._compile (module.js:652:30)",
+              "Object.Module._extensions..js (module.js:663:10)",
+              "Module.load (module.js:565:32)",
+              "tryModuleLoad (module.js:505:12)",
+              "Function.Module._load (module.js:497:3)",
+              "Function.Module.runMain (module.js:693:10)",
+              "startup (bootstrap_node.js:188:16)",
+              "bootstrap_node.js:609:3"
+            ]
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/API/Default/shifts/{id}/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "APIshiftsid4C1FD363",
+            "trace": [
+              "new Resource (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:66:26)",
+              "Resource.addResource (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:12:16)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:37:45)",
+              "Object.<anonymous> (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:106:1)",
+              "Module._compile (module.js:652:30)",
+              "Object.Module._extensions..js (module.js:663:10)",
+              "Module.load (module.js:565:32)",
+              "tryModuleLoad (module.js:505:12)",
+              "Function.Module._load (module.js:497:3)",
+              "Function.Module.runMain (module.js:693:10)",
+              "startup (bootstrap_node.js:188:16)",
+              "bootstrap_node.js:609:3"
+            ]
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/API/Default/shifts/{id}/GET/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "APIshiftsidGET3AAD82F5",
+            "trace": [
+              "new Method (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-apigateway/lib/method.js:32:26)",
+              "Resource.addMethod (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:15:16)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:39:25)",
+              "Object.<anonymous> (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:106:1)",
+              "Module._compile (module.js:652:30)",
+              "Object.Module._extensions..js (module.js:663:10)",
+              "Module.load (module.js:565:32)",
+              "tryModuleLoad (module.js:505:12)",
+              "Function.Module._load (module.js:497:3)",
+              "Function.Module.runMain (module.js:693:10)",
+              "startup (bootstrap_node.js:188:16)",
+              "bootstrap_node.js:609:3"
+            ]
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/API/Default/shifts/{id}/PATCH/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "APIshiftsidPATCH373E598A",
+            "trace": [
+              "new Method (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-apigateway/lib/method.js:32:26)",
+              "Resource.addMethod (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:15:16)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:41:25)",
+              "Object.<anonymous> (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:106:1)",
+              "Module._compile (module.js:652:30)",
+              "Object.Module._extensions..js (module.js:663:10)",
+              "Module.load (module.js:565:32)",
+              "tryModuleLoad (module.js:505:12)",
+              "Function.Module._load (module.js:497:3)",
+              "Function.Module.runMain (module.js:693:10)",
+              "startup (bootstrap_node.js:188:16)",
+              "bootstrap_node.js:609:3"
+            ]
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/API/Default/shifts/{id}/DELETE/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "APIshiftsidDELETE41190791",
+            "trace": [
+              "new Method (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-apigateway/lib/method.js:32:26)",
+              "Resource.addMethod (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:15:16)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:43:25)",
+              "Object.<anonymous> (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:106:1)",
+              "Module._compile (module.js:652:30)",
+              "Object.Module._extensions..js (module.js:663:10)",
+              "Module.load (module.js:565:32)",
+              "tryModuleLoad (module.js:505:12)",
+              "Function.Module._load (module.js:497:3)",
+              "Function.Module.runMain (module.js:693:10)",
+              "startup (bootstrap_node.js:188:16)",
+              "bootstrap_node.js:609:3"
+            ]
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/API/Default/shifts/{id}/OPTIONS/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "APIshiftsidOPTIONSF90C3373",
+            "trace": [
+              "new Method (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-apigateway/lib/method.js:32:26)",
+              "Resource.addMethod (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:15:16)",
+              "ApiLambdaCrudDynamoDBStack.addCorsOptions (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:73:21)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:44:14)",
+              "Object.<anonymous> (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:106:1)",
+              "Module._compile (module.js:652:30)",
+              "Object.Module._extensions..js (module.js:663:10)",
+              "Module.load (module.js:565:32)",
+              "tryModuleLoad (module.js:505:12)",
+              "Function.Module._load (module.js:497:3)",
+              "Function.Module.runMain (module.js:693:10)",
+              "startup (bootstrap_node.js:188:16)",
+              "bootstrap_node.js:609:3"
+            ]
+          }
+        ],
         "/ApiLambdaCrudDynamoDBExample/shifts": [
           {
             "type": "aws:cdk:hasPhysicalName",
             "data": "shifts",
             "trace": [
               "new Table (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-dynamodb/lib/table.js:67:23)",
-              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:11:29)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:14:29)",
               "Object.<anonymous> (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:106:1)",
               "Module._compile (module.js:652:30)",
               "Object.Module._extensions..js (module.js:663:10)",
@@ -33,7 +337,7 @@
             "data": "shifts0987A12A",
             "trace": [
               "new Table (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-dynamodb/lib/table.js:49:22)",
-              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:11:29)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:14:29)",
               "Object.<anonymous> (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:106:1)",
               "Module._compile (module.js:652:30)",
               "Object.Module._extensions..js (module.js:663:10)",
@@ -54,7 +358,7 @@
               "new Role (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-iam/lib/role.js:30:22)",
               "new Function (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-lambda/lib/function.js:59:35)",
               "ApiLambdaCrudDynamoDBStack.buildGetOneLambda (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:58:16)",
-              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:18:35)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:21:35)",
               "Object.<anonymous> (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:106:1)",
               "Module._compile (module.js:652:30)",
               "Object.Module._extensions..js (module.js:663:10)",
@@ -77,7 +381,7 @@
               "Function.addToPrincipal (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-iam/lib/grant.js:52:65)",
               "Table.grant (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-dynamodb/lib/table.js:234:26)",
               "Table.grantReadWriteData (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-dynamodb/lib/table.js:290:61)",
-              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:24:21)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:27:21)",
               "Object.<anonymous> (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:106:1)",
               "Module._compile (module.js:652:30)",
               "Object.Module._extensions..js (module.js:663:10)",
@@ -97,7 +401,7 @@
             "trace": [
               "new Function (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-lambda/lib/function.js:73:26)",
               "ApiLambdaCrudDynamoDBStack.buildGetOneLambda (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:58:16)",
-              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:18:35)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:21:35)",
               "Object.<anonymous> (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:106:1)",
               "Module._compile (module.js:652:30)",
               "Object.Module._extensions..js (module.js:663:10)",
@@ -127,7 +431,7 @@
               "AssetCode.bind (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-lambda/lib/code.js:116:26)",
               "new Function (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-lambda/lib/function.js:99:20)",
               "ApiLambdaCrudDynamoDBStack.buildGetOneLambda (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:58:16)",
-              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:18:35)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:21:35)",
               "Object.<anonymous> (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:106:1)",
               "Module._compile (module.js:652:30)",
               "Object.Module._extensions..js (module.js:663:10)",
@@ -149,7 +453,7 @@
               "AssetCode.bind (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-lambda/lib/code.js:116:26)",
               "new Function (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-lambda/lib/function.js:99:20)",
               "ApiLambdaCrudDynamoDBStack.buildGetOneLambda (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:58:16)",
-              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:18:35)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:21:35)",
               "Object.<anonymous> (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:106:1)",
               "Module._compile (module.js:652:30)",
               "Object.Module._extensions..js (module.js:663:10)",
@@ -171,7 +475,7 @@
               "AssetCode.bind (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-lambda/lib/code.js:116:26)",
               "new Function (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-lambda/lib/function.js:99:20)",
               "ApiLambdaCrudDynamoDBStack.buildGetOneLambda (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:58:16)",
-              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:18:35)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:21:35)",
               "Object.<anonymous> (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:106:1)",
               "Module._compile (module.js:652:30)",
               "Object.Module._extensions..js (module.js:663:10)",
@@ -193,7 +497,7 @@
               "AssetCode.bind (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-lambda/lib/code.js:116:26)",
               "new Function (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-lambda/lib/function.js:99:20)",
               "ApiLambdaCrudDynamoDBStack.buildGetOneLambda (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:58:16)",
-              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:18:35)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:21:35)",
               "Object.<anonymous> (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:106:1)",
               "Module._compile (module.js:652:30)",
               "Object.Module._extensions..js (module.js:663:10)",
@@ -260,7 +564,7 @@
               "new Role (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-iam/lib/role.js:30:22)",
               "new Function (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-lambda/lib/function.js:59:35)",
               "ApiLambdaCrudDynamoDBStack.buildGetAllLambda (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:61:16)",
-              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:19:35)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:22:35)",
               "Object.<anonymous> (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:106:1)",
               "Module._compile (module.js:652:30)",
               "Object.Module._extensions..js (module.js:663:10)",
@@ -283,7 +587,7 @@
               "Function.addToPrincipal (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-iam/lib/grant.js:52:65)",
               "Table.grant (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-dynamodb/lib/table.js:234:26)",
               "Table.grantReadWriteData (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-dynamodb/lib/table.js:290:61)",
-              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:23:21)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:26:21)",
               "Object.<anonymous> (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:106:1)",
               "Module._compile (module.js:652:30)",
               "Object.Module._extensions..js (module.js:663:10)",
@@ -303,7 +607,7 @@
             "trace": [
               "new Function (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-lambda/lib/function.js:73:26)",
               "ApiLambdaCrudDynamoDBStack.buildGetAllLambda (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:61:16)",
-              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:19:35)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:22:35)",
               "Object.<anonymous> (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:106:1)",
               "Module._compile (module.js:652:30)",
               "Object.Module._extensions..js (module.js:663:10)",
@@ -333,7 +637,7 @@
               "AssetCode.bind (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-lambda/lib/code.js:116:26)",
               "new Function (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-lambda/lib/function.js:99:20)",
               "ApiLambdaCrudDynamoDBStack.buildGetAllLambda (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:61:16)",
-              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:19:35)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:22:35)",
               "Object.<anonymous> (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:106:1)",
               "Module._compile (module.js:652:30)",
               "Object.Module._extensions..js (module.js:663:10)",
@@ -355,7 +659,7 @@
               "AssetCode.bind (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-lambda/lib/code.js:116:26)",
               "new Function (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-lambda/lib/function.js:99:20)",
               "ApiLambdaCrudDynamoDBStack.buildGetAllLambda (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:61:16)",
-              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:19:35)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:22:35)",
               "Object.<anonymous> (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:106:1)",
               "Module._compile (module.js:652:30)",
               "Object.Module._extensions..js (module.js:663:10)",
@@ -377,7 +681,7 @@
               "AssetCode.bind (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-lambda/lib/code.js:116:26)",
               "new Function (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-lambda/lib/function.js:99:20)",
               "ApiLambdaCrudDynamoDBStack.buildGetAllLambda (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:61:16)",
-              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:19:35)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:22:35)",
               "Object.<anonymous> (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:106:1)",
               "Module._compile (module.js:652:30)",
               "Object.Module._extensions..js (module.js:663:10)",
@@ -399,7 +703,7 @@
               "AssetCode.bind (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-lambda/lib/code.js:116:26)",
               "new Function (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-lambda/lib/function.js:99:20)",
               "ApiLambdaCrudDynamoDBStack.buildGetAllLambda (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:61:16)",
-              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:19:35)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:22:35)",
               "Object.<anonymous> (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:106:1)",
               "Module._compile (module.js:652:30)",
               "Object.Module._extensions..js (module.js:663:10)",
@@ -466,7 +770,7 @@
               "new Role (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-iam/lib/role.js:30:22)",
               "new Function (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-lambda/lib/function.js:59:35)",
               "ApiLambdaCrudDynamoDBStack.buildCreateOneLambda (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:64:16)",
-              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:20:38)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:23:38)",
               "Object.<anonymous> (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:106:1)",
               "Module._compile (module.js:652:30)",
               "Object.Module._extensions..js (module.js:663:10)",
@@ -489,7 +793,7 @@
               "Function.addToPrincipal (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-iam/lib/grant.js:52:65)",
               "Table.grant (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-dynamodb/lib/table.js:234:26)",
               "Table.grantReadWriteData (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-dynamodb/lib/table.js:290:61)",
-              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:25:21)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:28:21)",
               "Object.<anonymous> (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:106:1)",
               "Module._compile (module.js:652:30)",
               "Object.Module._extensions..js (module.js:663:10)",
@@ -509,7 +813,7 @@
             "trace": [
               "new Function (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-lambda/lib/function.js:73:26)",
               "ApiLambdaCrudDynamoDBStack.buildCreateOneLambda (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:64:16)",
-              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:20:38)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:23:38)",
               "Object.<anonymous> (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:106:1)",
               "Module._compile (module.js:652:30)",
               "Object.Module._extensions..js (module.js:663:10)",
@@ -539,7 +843,7 @@
               "AssetCode.bind (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-lambda/lib/code.js:116:26)",
               "new Function (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-lambda/lib/function.js:99:20)",
               "ApiLambdaCrudDynamoDBStack.buildCreateOneLambda (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:64:16)",
-              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:20:38)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:23:38)",
               "Object.<anonymous> (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:106:1)",
               "Module._compile (module.js:652:30)",
               "Object.Module._extensions..js (module.js:663:10)",
@@ -561,7 +865,7 @@
               "AssetCode.bind (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-lambda/lib/code.js:116:26)",
               "new Function (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-lambda/lib/function.js:99:20)",
               "ApiLambdaCrudDynamoDBStack.buildCreateOneLambda (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:64:16)",
-              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:20:38)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:23:38)",
               "Object.<anonymous> (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:106:1)",
               "Module._compile (module.js:652:30)",
               "Object.Module._extensions..js (module.js:663:10)",
@@ -583,7 +887,7 @@
               "AssetCode.bind (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-lambda/lib/code.js:116:26)",
               "new Function (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-lambda/lib/function.js:99:20)",
               "ApiLambdaCrudDynamoDBStack.buildCreateOneLambda (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:64:16)",
-              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:20:38)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:23:38)",
               "Object.<anonymous> (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:106:1)",
               "Module._compile (module.js:652:30)",
               "Object.Module._extensions..js (module.js:663:10)",
@@ -605,7 +909,7 @@
               "AssetCode.bind (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-lambda/lib/code.js:116:26)",
               "new Function (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-lambda/lib/function.js:99:20)",
               "ApiLambdaCrudDynamoDBStack.buildCreateOneLambda (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:64:16)",
-              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:20:38)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:23:38)",
               "Object.<anonymous> (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:106:1)",
               "Module._compile (module.js:652:30)",
               "Object.Module._extensions..js (module.js:663:10)",
@@ -672,7 +976,7 @@
               "new Role (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-iam/lib/role.js:30:22)",
               "new Function (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-lambda/lib/function.js:59:35)",
               "ApiLambdaCrudDynamoDBStack.buildUpdateOneLambda (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:67:16)",
-              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:21:38)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:24:38)",
               "Object.<anonymous> (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:106:1)",
               "Module._compile (module.js:652:30)",
               "Object.Module._extensions..js (module.js:663:10)",
@@ -695,7 +999,7 @@
               "Function.addToPrincipal (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-iam/lib/grant.js:52:65)",
               "Table.grant (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-dynamodb/lib/table.js:234:26)",
               "Table.grantReadWriteData (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-dynamodb/lib/table.js:290:61)",
-              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:26:21)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:29:21)",
               "Object.<anonymous> (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:106:1)",
               "Module._compile (module.js:652:30)",
               "Object.Module._extensions..js (module.js:663:10)",
@@ -715,7 +1019,7 @@
             "trace": [
               "new Function (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-lambda/lib/function.js:73:26)",
               "ApiLambdaCrudDynamoDBStack.buildUpdateOneLambda (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:67:16)",
-              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:21:38)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:24:38)",
               "Object.<anonymous> (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:106:1)",
               "Module._compile (module.js:652:30)",
               "Object.Module._extensions..js (module.js:663:10)",
@@ -745,7 +1049,7 @@
               "AssetCode.bind (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-lambda/lib/code.js:116:26)",
               "new Function (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-lambda/lib/function.js:99:20)",
               "ApiLambdaCrudDynamoDBStack.buildUpdateOneLambda (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:67:16)",
-              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:21:38)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:24:38)",
               "Object.<anonymous> (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:106:1)",
               "Module._compile (module.js:652:30)",
               "Object.Module._extensions..js (module.js:663:10)",
@@ -767,7 +1071,7 @@
               "AssetCode.bind (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-lambda/lib/code.js:116:26)",
               "new Function (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-lambda/lib/function.js:99:20)",
               "ApiLambdaCrudDynamoDBStack.buildUpdateOneLambda (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:67:16)",
-              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:21:38)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:24:38)",
               "Object.<anonymous> (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:106:1)",
               "Module._compile (module.js:652:30)",
               "Object.Module._extensions..js (module.js:663:10)",
@@ -789,7 +1093,7 @@
               "AssetCode.bind (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-lambda/lib/code.js:116:26)",
               "new Function (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-lambda/lib/function.js:99:20)",
               "ApiLambdaCrudDynamoDBStack.buildUpdateOneLambda (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:67:16)",
-              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:21:38)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:24:38)",
               "Object.<anonymous> (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:106:1)",
               "Module._compile (module.js:652:30)",
               "Object.Module._extensions..js (module.js:663:10)",
@@ -811,7 +1115,7 @@
               "AssetCode.bind (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-lambda/lib/code.js:116:26)",
               "new Function (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-lambda/lib/function.js:99:20)",
               "ApiLambdaCrudDynamoDBStack.buildUpdateOneLambda (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:67:16)",
-              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:21:38)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:24:38)",
               "Object.<anonymous> (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:106:1)",
               "Module._compile (module.js:652:30)",
               "Object.Module._extensions..js (module.js:663:10)",
@@ -878,7 +1182,7 @@
               "new Role (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-iam/lib/role.js:30:22)",
               "new Function (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-lambda/lib/function.js:59:35)",
               "ApiLambdaCrudDynamoDBStack.buildDeleteOneLambda (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:70:16)",
-              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:22:38)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:25:38)",
               "Object.<anonymous> (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:106:1)",
               "Module._compile (module.js:652:30)",
               "Object.Module._extensions..js (module.js:663:10)",
@@ -901,7 +1205,7 @@
               "Function.addToPrincipal (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-iam/lib/grant.js:52:65)",
               "Table.grant (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-dynamodb/lib/table.js:234:26)",
               "Table.grantReadWriteData (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-dynamodb/lib/table.js:290:61)",
-              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:27:21)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:30:21)",
               "Object.<anonymous> (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:106:1)",
               "Module._compile (module.js:652:30)",
               "Object.Module._extensions..js (module.js:663:10)",
@@ -921,7 +1225,7 @@
             "trace": [
               "new Function (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-lambda/lib/function.js:73:26)",
               "ApiLambdaCrudDynamoDBStack.buildDeleteOneLambda (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:70:16)",
-              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:22:38)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:25:38)",
               "Object.<anonymous> (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:106:1)",
               "Module._compile (module.js:652:30)",
               "Object.Module._extensions..js (module.js:663:10)",
@@ -951,7 +1255,7 @@
               "AssetCode.bind (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-lambda/lib/code.js:116:26)",
               "new Function (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-lambda/lib/function.js:99:20)",
               "ApiLambdaCrudDynamoDBStack.buildDeleteOneLambda (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:70:16)",
-              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:22:38)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:25:38)",
               "Object.<anonymous> (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:106:1)",
               "Module._compile (module.js:652:30)",
               "Object.Module._extensions..js (module.js:663:10)",
@@ -973,7 +1277,7 @@
               "AssetCode.bind (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-lambda/lib/code.js:116:26)",
               "new Function (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-lambda/lib/function.js:99:20)",
               "ApiLambdaCrudDynamoDBStack.buildDeleteOneLambda (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:70:16)",
-              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:22:38)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:25:38)",
               "Object.<anonymous> (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:106:1)",
               "Module._compile (module.js:652:30)",
               "Object.Module._extensions..js (module.js:663:10)",
@@ -995,7 +1299,7 @@
               "AssetCode.bind (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-lambda/lib/code.js:116:26)",
               "new Function (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-lambda/lib/function.js:99:20)",
               "ApiLambdaCrudDynamoDBStack.buildDeleteOneLambda (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:70:16)",
-              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:22:38)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:25:38)",
               "Object.<anonymous> (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:106:1)",
               "Module._compile (module.js:652:30)",
               "Object.Module._extensions..js (module.js:663:10)",
@@ -1017,7 +1321,7 @@
               "AssetCode.bind (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-lambda/lib/code.js:116:26)",
               "new Function (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-lambda/lib/function.js:99:20)",
               "ApiLambdaCrudDynamoDBStack.buildDeleteOneLambda (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:70:16)",
-              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:22:38)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:25:38)",
               "Object.<anonymous> (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:106:1)",
               "Module._compile (module.js:652:30)",
               "Object.Module._extensions..js (module.js:663:10)",
@@ -1064,310 +1368,6 @@
               "new Method (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-apigateway/lib/method.js:27:31)",
               "Resource.addMethod (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:15:16)",
               "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:43:25)",
-              "Object.<anonymous> (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:106:1)",
-              "Module._compile (module.js:652:30)",
-              "Object.Module._extensions..js (module.js:663:10)",
-              "Module.load (module.js:565:32)",
-              "tryModuleLoad (module.js:505:12)",
-              "Function.Module._load (module.js:497:3)",
-              "Function.Module.runMain (module.js:693:10)",
-              "startup (bootstrap_node.js:188:16)",
-              "bootstrap_node.js:609:3"
-            ]
-          }
-        ],
-        "/ApiLambdaCrudDynamoDBExample/shiftsApi/Resource": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "shiftsApiB9795C86",
-            "trace": [
-              "new RestApi (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:28:26)",
-              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:28:21)",
-              "Object.<anonymous> (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:106:1)",
-              "Module._compile (module.js:652:30)",
-              "Object.Module._extensions..js (module.js:663:10)",
-              "Module.load (module.js:565:32)",
-              "tryModuleLoad (module.js:505:12)",
-              "Function.Module._load (module.js:497:3)",
-              "Function.Module.runMain (module.js:693:10)",
-              "startup (bootstrap_node.js:188:16)",
-              "bootstrap_node.js:609:3"
-            ]
-          }
-        ],
-        "/ApiLambdaCrudDynamoDBExample/shiftsApi/Deployment/Resource": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "shiftsApiDeploymentEE0A2B3B71e8e2e1a6617e10e7e16544b7472b6c",
-            "trace": [
-              "new Deployment (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-apigateway/lib/deployment.js:39:25)",
-              "RestApi.configureDeployment (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:171:38)",
-              "new RestApi (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:41:14)",
-              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:28:21)",
-              "Object.<anonymous> (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:106:1)",
-              "Module._compile (module.js:652:30)",
-              "Object.Module._extensions..js (module.js:663:10)",
-              "Module.load (module.js:565:32)",
-              "tryModuleLoad (module.js:505:12)",
-              "Function.Module._load (module.js:497:3)",
-              "Function.Module.runMain (module.js:693:10)",
-              "startup (bootstrap_node.js:188:16)",
-              "bootstrap_node.js:609:3"
-            ]
-          }
-        ],
-        "/ApiLambdaCrudDynamoDBExample/shiftsApi/DeploymentStage.prod/Resource": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "shiftsApiDeploymentStageprodD9DD8B65",
-            "trace": [
-              "new Stage (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-apigateway/lib/stage.js:27:26)",
-              "RestApi.configureDeployment (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:179:36)",
-              "new RestApi (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:41:14)",
-              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:28:21)",
-              "Object.<anonymous> (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:106:1)",
-              "Module._compile (module.js:652:30)",
-              "Object.Module._extensions..js (module.js:663:10)",
-              "Module.load (module.js:565:32)",
-              "tryModuleLoad (module.js:505:12)",
-              "Function.Module._load (module.js:497:3)",
-              "Function.Module.runMain (module.js:693:10)",
-              "startup (bootstrap_node.js:188:16)",
-              "bootstrap_node.js:609:3"
-            ]
-          }
-        ],
-        "/ApiLambdaCrudDynamoDBExample/shiftsApi/Endpoint": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "shiftsApiEndpoint7C594CCE",
-            "trace": [
-              "RestApi.configureDeployment (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:183:13)",
-              "new RestApi (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:41:14)",
-              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:28:21)",
-              "Object.<anonymous> (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:106:1)",
-              "Module._compile (module.js:652:30)",
-              "Object.Module._extensions..js (module.js:663:10)",
-              "Module.load (module.js:565:32)",
-              "tryModuleLoad (module.js:505:12)",
-              "Function.Module._load (module.js:497:3)",
-              "Function.Module.runMain (module.js:693:10)",
-              "startup (bootstrap_node.js:188:16)",
-              "bootstrap_node.js:609:3"
-            ]
-          }
-        ],
-        "/ApiLambdaCrudDynamoDBExample/shiftsApi/CloudWatchRole/Resource": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "shiftsApiCloudWatchRole9EFB5B38",
-            "trace": [
-              "new Role (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-iam/lib/role.js:30:22)",
-              "RestApi.configureCloudWatchRole (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:192:22)",
-              "new RestApi (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:44:18)",
-              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:28:21)",
-              "Object.<anonymous> (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:106:1)",
-              "Module._compile (module.js:652:30)",
-              "Object.Module._extensions..js (module.js:663:10)",
-              "Module.load (module.js:565:32)",
-              "tryModuleLoad (module.js:505:12)",
-              "Function.Module._load (module.js:497:3)",
-              "Function.Module.runMain (module.js:693:10)",
-              "startup (bootstrap_node.js:188:16)",
-              "bootstrap_node.js:609:3"
-            ]
-          }
-        ],
-        "/ApiLambdaCrudDynamoDBExample/shiftsApi/Account": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "shiftsApiAccount66376AAA",
-            "trace": [
-              "RestApi.configureCloudWatchRole (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:196:26)",
-              "new RestApi (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:44:18)",
-              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:28:21)",
-              "Object.<anonymous> (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:106:1)",
-              "Module._compile (module.js:652:30)",
-              "Object.Module._extensions..js (module.js:663:10)",
-              "Module.load (module.js:565:32)",
-              "tryModuleLoad (module.js:505:12)",
-              "Function.Module._load (module.js:497:3)",
-              "Function.Module.runMain (module.js:693:10)",
-              "startup (bootstrap_node.js:188:16)",
-              "bootstrap_node.js:609:3"
-            ]
-          }
-        ],
-        "/ApiLambdaCrudDynamoDBExample/shiftsApi/Default/shifts/Resource": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "shiftsApishiftsD1948668",
-            "trace": [
-              "new Resource (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:66:26)",
-              "RootResource.addResource (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:12:16)",
-              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:31:38)",
-              "Object.<anonymous> (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:106:1)",
-              "Module._compile (module.js:652:30)",
-              "Object.Module._extensions..js (module.js:663:10)",
-              "Module.load (module.js:565:32)",
-              "tryModuleLoad (module.js:505:12)",
-              "Function.Module._load (module.js:497:3)",
-              "Function.Module.runMain (module.js:693:10)",
-              "startup (bootstrap_node.js:188:16)",
-              "bootstrap_node.js:609:3"
-            ]
-          }
-        ],
-        "/ApiLambdaCrudDynamoDBExample/shiftsApi/Default/shifts/GET/Resource": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "shiftsApishiftsGET2706DC70",
-            "trace": [
-              "new Method (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-apigateway/lib/method.js:32:26)",
-              "Resource.addMethod (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:15:16)",
-              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:33:21)",
-              "Object.<anonymous> (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:106:1)",
-              "Module._compile (module.js:652:30)",
-              "Object.Module._extensions..js (module.js:663:10)",
-              "Module.load (module.js:565:32)",
-              "tryModuleLoad (module.js:505:12)",
-              "Function.Module._load (module.js:497:3)",
-              "Function.Module.runMain (module.js:693:10)",
-              "startup (bootstrap_node.js:188:16)",
-              "bootstrap_node.js:609:3"
-            ]
-          }
-        ],
-        "/ApiLambdaCrudDynamoDBExample/shiftsApi/Default/shifts/POST/Resource": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "shiftsApishiftsPOST26F72E67",
-            "trace": [
-              "new Method (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-apigateway/lib/method.js:32:26)",
-              "Resource.addMethod (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:15:16)",
-              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:35:21)",
-              "Object.<anonymous> (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:106:1)",
-              "Module._compile (module.js:652:30)",
-              "Object.Module._extensions..js (module.js:663:10)",
-              "Module.load (module.js:565:32)",
-              "tryModuleLoad (module.js:505:12)",
-              "Function.Module._load (module.js:497:3)",
-              "Function.Module.runMain (module.js:693:10)",
-              "startup (bootstrap_node.js:188:16)",
-              "bootstrap_node.js:609:3"
-            ]
-          }
-        ],
-        "/ApiLambdaCrudDynamoDBExample/shiftsApi/Default/shifts/OPTIONS/Resource": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "shiftsApishiftsOPTIONS91BAEB83",
-            "trace": [
-              "new Method (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-apigateway/lib/method.js:32:26)",
-              "Resource.addMethod (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:15:16)",
-              "ApiLambdaCrudDynamoDBStack.addCorsOptions (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:73:21)",
-              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:36:14)",
-              "Object.<anonymous> (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:106:1)",
-              "Module._compile (module.js:652:30)",
-              "Object.Module._extensions..js (module.js:663:10)",
-              "Module.load (module.js:565:32)",
-              "tryModuleLoad (module.js:505:12)",
-              "Function.Module._load (module.js:497:3)",
-              "Function.Module.runMain (module.js:693:10)",
-              "startup (bootstrap_node.js:188:16)",
-              "bootstrap_node.js:609:3"
-            ]
-          }
-        ],
-        "/ApiLambdaCrudDynamoDBExample/shiftsApi/Default/shifts/{id}/Resource": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "shiftsApishiftsid3C902A14",
-            "trace": [
-              "new Resource (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:66:26)",
-              "Resource.addResource (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:12:16)",
-              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:37:45)",
-              "Object.<anonymous> (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:106:1)",
-              "Module._compile (module.js:652:30)",
-              "Object.Module._extensions..js (module.js:663:10)",
-              "Module.load (module.js:565:32)",
-              "tryModuleLoad (module.js:505:12)",
-              "Function.Module._load (module.js:497:3)",
-              "Function.Module.runMain (module.js:693:10)",
-              "startup (bootstrap_node.js:188:16)",
-              "bootstrap_node.js:609:3"
-            ]
-          }
-        ],
-        "/ApiLambdaCrudDynamoDBExample/shiftsApi/Default/shifts/{id}/GET/Resource": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "shiftsApishiftsidGET1B625FFD",
-            "trace": [
-              "new Method (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-apigateway/lib/method.js:32:26)",
-              "Resource.addMethod (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:15:16)",
-              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:39:25)",
-              "Object.<anonymous> (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:106:1)",
-              "Module._compile (module.js:652:30)",
-              "Object.Module._extensions..js (module.js:663:10)",
-              "Module.load (module.js:565:32)",
-              "tryModuleLoad (module.js:505:12)",
-              "Function.Module._load (module.js:497:3)",
-              "Function.Module.runMain (module.js:693:10)",
-              "startup (bootstrap_node.js:188:16)",
-              "bootstrap_node.js:609:3"
-            ]
-          }
-        ],
-        "/ApiLambdaCrudDynamoDBExample/shiftsApi/Default/shifts/{id}/PATCH/Resource": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "shiftsApishiftsidPATCHB55BA6DC",
-            "trace": [
-              "new Method (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-apigateway/lib/method.js:32:26)",
-              "Resource.addMethod (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:15:16)",
-              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:41:25)",
-              "Object.<anonymous> (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:106:1)",
-              "Module._compile (module.js:652:30)",
-              "Object.Module._extensions..js (module.js:663:10)",
-              "Module.load (module.js:565:32)",
-              "tryModuleLoad (module.js:505:12)",
-              "Function.Module._load (module.js:497:3)",
-              "Function.Module.runMain (module.js:693:10)",
-              "startup (bootstrap_node.js:188:16)",
-              "bootstrap_node.js:609:3"
-            ]
-          }
-        ],
-        "/ApiLambdaCrudDynamoDBExample/shiftsApi/Default/shifts/{id}/DELETE/Resource": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "shiftsApishiftsidDELETE09D2A785",
-            "trace": [
-              "new Method (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-apigateway/lib/method.js:32:26)",
-              "Resource.addMethod (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:15:16)",
-              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:43:25)",
-              "Object.<anonymous> (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:106:1)",
-              "Module._compile (module.js:652:30)",
-              "Object.Module._extensions..js (module.js:663:10)",
-              "Module.load (module.js:565:32)",
-              "tryModuleLoad (module.js:505:12)",
-              "Function.Module._load (module.js:497:3)",
-              "Function.Module.runMain (module.js:693:10)",
-              "startup (bootstrap_node.js:188:16)",
-              "bootstrap_node.js:609:3"
-            ]
-          }
-        ],
-        "/ApiLambdaCrudDynamoDBExample/shiftsApi/Default/shifts/{id}/OPTIONS/Resource": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "shiftsApishiftsidOPTIONS571CF13B",
-            "trace": [
-              "new Method (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-apigateway/lib/method.js:32:26)",
-              "Resource.addMethod (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:15:16)",
-              "ApiLambdaCrudDynamoDBStack.addCorsOptions (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:73:21)",
-              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:44:14)",
               "Object.<anonymous> (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/2/index.js:106:1)",
               "Module._compile (module.js:652:30)",
               "Object.Module._extensions..js (module.js:663:10)",

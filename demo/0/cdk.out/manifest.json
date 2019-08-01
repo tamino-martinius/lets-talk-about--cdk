@@ -1,0 +1,228 @@
+{
+  "version": "0.36.0",
+  "artifacts": {
+    "ApiLambdaCrudDynamoDBExample": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "ApiLambdaCrudDynamoDBExample.template.json"
+      },
+      "metadata": {
+        "/ApiLambdaCrudDynamoDBExample/shifts": [
+          {
+            "type": "aws:cdk:hasPhysicalName",
+            "data": "shifts",
+            "trace": [
+              "new Table (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/0/node_modules/@aws-cdk/aws-dynamodb/lib/table.js:67:23)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/0/index.js:10:29)",
+              "Object.<anonymous> (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/0/index.js:31:1)",
+              "Module._compile (module.js:652:30)",
+              "Object.Module._extensions..js (module.js:663:10)",
+              "Module.load (module.js:565:32)",
+              "tryModuleLoad (module.js:505:12)",
+              "Function.Module._load (module.js:497:3)",
+              "Function.Module.runMain (module.js:693:10)",
+              "startup (bootstrap_node.js:188:16)",
+              "bootstrap_node.js:609:3"
+            ]
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/shifts/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "shifts0987A12A",
+            "trace": [
+              "new Table (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/0/node_modules/@aws-cdk/aws-dynamodb/lib/table.js:49:22)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/0/index.js:10:29)",
+              "Object.<anonymous> (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/0/index.js:31:1)",
+              "Module._compile (module.js:652:30)",
+              "Object.Module._extensions..js (module.js:663:10)",
+              "Module.load (module.js:565:32)",
+              "tryModuleLoad (module.js:505:12)",
+              "Function.Module._load (module.js:497:3)",
+              "Function.Module.runMain (module.js:693:10)",
+              "startup (bootstrap_node.js:188:16)",
+              "bootstrap_node.js:609:3"
+            ]
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/getOneItemFunction/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "getOneItemFunctionServiceRoleCFD54796",
+            "trace": [
+              "new Role (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/0/node_modules/@aws-cdk/aws-iam/lib/role.js:30:22)",
+              "new Function (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/0/node_modules/@aws-cdk/aws-lambda/lib/function.js:59:35)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/0/index.js:17:30)",
+              "Object.<anonymous> (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/0/index.js:31:1)",
+              "Module._compile (module.js:652:30)",
+              "Object.Module._extensions..js (module.js:663:10)",
+              "Module.load (module.js:565:32)",
+              "tryModuleLoad (module.js:505:12)",
+              "Function.Module._load (module.js:497:3)",
+              "Function.Module.runMain (module.js:693:10)",
+              "startup (bootstrap_node.js:188:16)",
+              "bootstrap_node.js:609:3"
+            ]
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/getOneItemFunction/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "getOneItemFunctionServiceRoleDefaultPolicy6B743AA8",
+            "trace": [
+              "new Policy (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/0/node_modules/@aws-cdk/aws-iam/lib/policy.js:29:26)",
+              "Role.addToPolicy (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/0/node_modules/@aws-cdk/aws-iam/lib/role.js:118:34)",
+              "Function.addToPrincipal (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/0/node_modules/@aws-cdk/aws-iam/lib/grant.js:52:65)",
+              "Table.grant (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/0/node_modules/@aws-cdk/aws-dynamodb/lib/table.js:234:26)",
+              "Table.grantReadWriteData (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/0/node_modules/@aws-cdk/aws-dynamodb/lib/table.js:290:61)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/0/index.js:26:21)",
+              "Object.<anonymous> (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/0/index.js:31:1)",
+              "Module._compile (module.js:652:30)",
+              "Object.Module._extensions..js (module.js:663:10)",
+              "Module.load (module.js:565:32)",
+              "tryModuleLoad (module.js:505:12)",
+              "Function.Module._load (module.js:497:3)",
+              "Function.Module.runMain (module.js:693:10)",
+              "startup (bootstrap_node.js:188:16)",
+              "bootstrap_node.js:609:3"
+            ]
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/getOneItemFunction/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "getOneItemFunctionE3257B22",
+            "trace": [
+              "new Function (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/0/node_modules/@aws-cdk/aws-lambda/lib/function.js:73:26)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/0/index.js:17:30)",
+              "Object.<anonymous> (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/0/index.js:31:1)",
+              "Module._compile (module.js:652:30)",
+              "Object.Module._extensions..js (module.js:663:10)",
+              "Module.load (module.js:565:32)",
+              "tryModuleLoad (module.js:505:12)",
+              "Function.Module._load (module.js:497:3)",
+              "Function.Module.runMain (module.js:693:10)",
+              "startup (bootstrap_node.js:188:16)",
+              "bootstrap_node.js:609:3"
+            ]
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/getOneItemFunction/Code": [
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.4ad4d1968038ce5925c1e9b4751f454dd74f5a477abcc80e96ec8291af6262ec",
+              "id": "ApiLambdaCrudDynamoDBExamplegetOneItemFunctionCodeBA304F93",
+              "packaging": "zip",
+              "sourceHash": "4ad4d1968038ce5925c1e9b4751f454dd74f5a477abcc80e96ec8291af6262ec",
+              "s3BucketParameter": "getOneItemFunctionCodeS3Bucket373AA1BE",
+              "s3KeyParameter": "getOneItemFunctionCodeS3VersionKey56A3E97C",
+              "artifactHashParameter": "getOneItemFunctionCodeArtifactHashE0D2DE55"
+            },
+            "trace": [
+              "new Asset (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/0/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:65:19)",
+              "AssetCode.bind (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/0/node_modules/@aws-cdk/aws-lambda/lib/code.js:116:26)",
+              "new Function (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/0/node_modules/@aws-cdk/aws-lambda/lib/function.js:99:20)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/0/index.js:17:30)",
+              "Object.<anonymous> (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/0/index.js:31:1)",
+              "Module._compile (module.js:652:30)",
+              "Object.Module._extensions..js (module.js:663:10)",
+              "Module.load (module.js:565:32)",
+              "tryModuleLoad (module.js:505:12)",
+              "Function.Module._load (module.js:497:3)",
+              "Function.Module.runMain (module.js:693:10)",
+              "startup (bootstrap_node.js:188:16)",
+              "bootstrap_node.js:609:3"
+            ]
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/getOneItemFunction/Code/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "getOneItemFunctionCodeS3Bucket373AA1BE",
+            "trace": [
+              "new Asset (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/0/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:32:29)",
+              "AssetCode.bind (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/0/node_modules/@aws-cdk/aws-lambda/lib/code.js:116:26)",
+              "new Function (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/0/node_modules/@aws-cdk/aws-lambda/lib/function.js:99:20)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/0/index.js:17:30)",
+              "Object.<anonymous> (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/0/index.js:31:1)",
+              "Module._compile (module.js:652:30)",
+              "Object.Module._extensions..js (module.js:663:10)",
+              "Module.load (module.js:565:32)",
+              "tryModuleLoad (module.js:505:12)",
+              "Function.Module._load (module.js:497:3)",
+              "Function.Module.runMain (module.js:693:10)",
+              "startup (bootstrap_node.js:188:16)",
+              "bootstrap_node.js:609:3"
+            ]
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/getOneItemFunction/Code/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "getOneItemFunctionCodeS3VersionKey56A3E97C",
+            "trace": [
+              "new Asset (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/0/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:36:26)",
+              "AssetCode.bind (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/0/node_modules/@aws-cdk/aws-lambda/lib/code.js:116:26)",
+              "new Function (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/0/node_modules/@aws-cdk/aws-lambda/lib/function.js:99:20)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/0/index.js:17:30)",
+              "Object.<anonymous> (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/0/index.js:31:1)",
+              "Module._compile (module.js:652:30)",
+              "Object.Module._extensions..js (module.js:663:10)",
+              "Module.load (module.js:565:32)",
+              "tryModuleLoad (module.js:505:12)",
+              "Function.Module._load (module.js:497:3)",
+              "Function.Module.runMain (module.js:693:10)",
+              "startup (bootstrap_node.js:188:16)",
+              "bootstrap_node.js:609:3"
+            ]
+          }
+        ],
+        "/ApiLambdaCrudDynamoDBExample/getOneItemFunction/Code/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "getOneItemFunctionCodeArtifactHashE0D2DE55",
+            "trace": [
+              "new Asset (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/0/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:40:27)",
+              "AssetCode.bind (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/0/node_modules/@aws-cdk/aws-lambda/lib/code.js:116:26)",
+              "new Function (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/0/node_modules/@aws-cdk/aws-lambda/lib/function.js:99:20)",
+              "new ApiLambdaCrudDynamoDBStack (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/0/index.js:17:30)",
+              "Object.<anonymous> (/Users/tamino/Workspace/talks/lets-talk-about--cdk/demo/0/index.js:31:1)",
+              "Module._compile (module.js:652:30)",
+              "Object.Module._extensions..js (module.js:663:10)",
+              "Module.load (module.js:565:32)",
+              "tryModuleLoad (module.js:505:12)",
+              "Function.Module._load (module.js:497:3)",
+              "Function.Module.runMain (module.js:693:10)",
+              "startup (bootstrap_node.js:188:16)",
+              "bootstrap_node.js:609:3"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "runtime": {
+    "libraries": {
+      "@aws-cdk/aws-dynamodb": "1.2.0",
+      "@aws-cdk/core": "1.2.0",
+      "@aws-cdk/cx-api": "1.2.0",
+      "@aws-cdk/aws-applicationautoscaling": "1.2.0",
+      "@aws-cdk/aws-iam": "1.2.0",
+      "@aws-cdk/region-info": "1.2.0",
+      "@aws-cdk/aws-autoscaling-common": "1.2.0",
+      "@aws-cdk/aws-cloudwatch": "1.2.0",
+      "@aws-cdk/aws-lambda": "1.2.0",
+      "@aws-cdk/aws-ec2": "1.2.0",
+      "@aws-cdk/aws-ssm": "1.2.0",
+      "@aws-cdk/aws-sqs": "1.2.0",
+      "@aws-cdk/aws-kms": "1.2.0",
+      "@aws-cdk/aws-s3-assets": "1.2.0",
+      "@aws-cdk/assets": "1.2.0",
+      "@aws-cdk/aws-s3": "1.2.0",
+      "@aws-cdk/aws-events": "1.2.0",
+      "jsii-runtime": "node.js/v8.10.0"
+    }
+  }
+}

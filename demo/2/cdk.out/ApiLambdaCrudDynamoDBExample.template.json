@@ -1,5 +1,451 @@
 {
   "Resources": {
+    "API62EA1CFF": {
+      "Type": "AWS::ApiGateway::RestApi",
+      "Properties": {
+        "Name": "shyftplan API"
+      },
+      "Metadata": {
+        "aws:cdk:path": "ApiLambdaCrudDynamoDBExample/API/Resource"
+      }
+    },
+    "APIDeployment0E06874E5964ff7f6673cec28d5f1ee6edfc84cb": {
+      "Type": "AWS::ApiGateway::Deployment",
+      "Properties": {
+        "RestApiId": {
+          "Ref": "API62EA1CFF"
+        },
+        "Description": "Automatically created by the RestApi construct"
+      },
+      "DependsOn": [
+        "APIshiftsidDELETE41190791",
+        "APIshiftsidGET3AAD82F5",
+        "APIshiftsidOPTIONSF90C3373",
+        "APIshiftsidPATCH373E598A",
+        "APIshiftsid4C1FD363",
+        "APIshiftsGETADDD78F9",
+        "APIshiftsOPTIONS02775CFF",
+        "APIshiftsPOST92958661",
+        "APIshifts4B0E1F93"
+      ],
+      "Metadata": {
+        "aws:cdk:path": "ApiLambdaCrudDynamoDBExample/API/Deployment/Resource"
+      }
+    },
+    "APIDeploymentStageprod278E75BA": {
+      "Type": "AWS::ApiGateway::Stage",
+      "Properties": {
+        "RestApiId": {
+          "Ref": "API62EA1CFF"
+        },
+        "DeploymentId": {
+          "Ref": "APIDeployment0E06874E5964ff7f6673cec28d5f1ee6edfc84cb"
+        },
+        "StageName": "prod"
+      },
+      "Metadata": {
+        "aws:cdk:path": "ApiLambdaCrudDynamoDBExample/API/DeploymentStage.prod/Resource"
+      }
+    },
+    "APICloudWatchRole927CEB3B": {
+      "Type": "AWS::IAM::Role",
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": {
+                  "Fn::Join": [
+                    "",
+                    [
+                      "apigateway.",
+                      {
+                        "Ref": "AWS::URLSuffix"
+                      }
+                    ]
+                  ]
+                }
+              }
+            }
+          ],
+          "Version": "2012-10-17"
+        },
+        "ManagedPolicyArns": [
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":iam::aws:policy/service-role/AmazonAPIGatewayPushToCloudWatchLogs"
+              ]
+            ]
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "ApiLambdaCrudDynamoDBExample/API/CloudWatchRole/Resource"
+      }
+    },
+    "APIAccountD065B313": {
+      "Type": "AWS::ApiGateway::Account",
+      "Properties": {
+        "CloudWatchRoleArn": {
+          "Fn::GetAtt": [
+            "APICloudWatchRole927CEB3B",
+            "Arn"
+          ]
+        }
+      },
+      "DependsOn": [
+        "API62EA1CFF"
+      ],
+      "Metadata": {
+        "aws:cdk:path": "ApiLambdaCrudDynamoDBExample/API/Account"
+      }
+    },
+    "APIshifts4B0E1F93": {
+      "Type": "AWS::ApiGateway::Resource",
+      "Properties": {
+        "ParentId": {
+          "Fn::GetAtt": [
+            "API62EA1CFF",
+            "RootResourceId"
+          ]
+        },
+        "PathPart": "shifts",
+        "RestApiId": {
+          "Ref": "API62EA1CFF"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "ApiLambdaCrudDynamoDBExample/API/Default/shifts/Resource"
+      }
+    },
+    "APIshiftsGETADDD78F9": {
+      "Type": "AWS::ApiGateway::Method",
+      "Properties": {
+        "HttpMethod": "GET",
+        "ResourceId": {
+          "Ref": "APIshifts4B0E1F93"
+        },
+        "RestApiId": {
+          "Ref": "API62EA1CFF"
+        },
+        "AuthorizationType": "NONE",
+        "Integration": {
+          "IntegrationHttpMethod": "POST",
+          "Type": "AWS_PROXY",
+          "Uri": {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":apigateway:",
+                {
+                  "Ref": "AWS::Region"
+                },
+                ":lambda:path/2015-03-31/functions/",
+                {
+                  "Fn::GetAtt": [
+                    "getAllItemsFunction0B7A913E",
+                    "Arn"
+                  ]
+                },
+                "/invocations"
+              ]
+            ]
+          }
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "ApiLambdaCrudDynamoDBExample/API/Default/shifts/GET/Resource"
+      }
+    },
+    "APIshiftsPOST92958661": {
+      "Type": "AWS::ApiGateway::Method",
+      "Properties": {
+        "HttpMethod": "POST",
+        "ResourceId": {
+          "Ref": "APIshifts4B0E1F93"
+        },
+        "RestApiId": {
+          "Ref": "API62EA1CFF"
+        },
+        "AuthorizationType": "NONE",
+        "Integration": {
+          "IntegrationHttpMethod": "POST",
+          "Type": "AWS_PROXY",
+          "Uri": {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":apigateway:",
+                {
+                  "Ref": "AWS::Region"
+                },
+                ":lambda:path/2015-03-31/functions/",
+                {
+                  "Fn::GetAtt": [
+                    "createOneItemFunctionCAF71B6F",
+                    "Arn"
+                  ]
+                },
+                "/invocations"
+              ]
+            ]
+          }
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "ApiLambdaCrudDynamoDBExample/API/Default/shifts/POST/Resource"
+      }
+    },
+    "APIshiftsOPTIONS02775CFF": {
+      "Type": "AWS::ApiGateway::Method",
+      "Properties": {
+        "HttpMethod": "OPTIONS",
+        "ResourceId": {
+          "Ref": "APIshifts4B0E1F93"
+        },
+        "RestApiId": {
+          "Ref": "API62EA1CFF"
+        },
+        "AuthorizationType": "NONE",
+        "Integration": {
+          "IntegrationResponses": [
+            {
+              "ResponseParameters": {
+                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,X-Amz-User-Agent'",
+                "method.response.header.Access-Control-Allow-Origin": "'*'",
+                "method.response.header.Access-Control-Allow-Credentials": "'false'",
+                "method.response.header.Access-Control-Allow-Methods": "'OPTIONS,GET,PUT,POST,DELETE'"
+              },
+              "StatusCode": "200"
+            }
+          ],
+          "PassthroughBehavior": "NEVER",
+          "RequestTemplates": {
+            "application/json": "{\"statusCode\": 200}"
+          },
+          "Type": "MOCK"
+        },
+        "MethodResponses": [
+          {
+            "ResponseParameters": {
+              "method.response.header.Access-Control-Allow-Headers": true,
+              "method.response.header.Access-Control-Allow-Methods": true,
+              "method.response.header.Access-Control-Allow-Credentials": true,
+              "method.response.header.Access-Control-Allow-Origin": true
+            },
+            "StatusCode": "200"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "ApiLambdaCrudDynamoDBExample/API/Default/shifts/OPTIONS/Resource"
+      }
+    },
+    "APIshiftsid4C1FD363": {
+      "Type": "AWS::ApiGateway::Resource",
+      "Properties": {
+        "ParentId": {
+          "Ref": "APIshifts4B0E1F93"
+        },
+        "PathPart": "{id}",
+        "RestApiId": {
+          "Ref": "API62EA1CFF"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "ApiLambdaCrudDynamoDBExample/API/Default/shifts/{id}/Resource"
+      }
+    },
+    "APIshiftsidGET3AAD82F5": {
+      "Type": "AWS::ApiGateway::Method",
+      "Properties": {
+        "HttpMethod": "GET",
+        "ResourceId": {
+          "Ref": "APIshiftsid4C1FD363"
+        },
+        "RestApiId": {
+          "Ref": "API62EA1CFF"
+        },
+        "AuthorizationType": "NONE",
+        "Integration": {
+          "IntegrationHttpMethod": "POST",
+          "Type": "AWS_PROXY",
+          "Uri": {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":apigateway:",
+                {
+                  "Ref": "AWS::Region"
+                },
+                ":lambda:path/2015-03-31/functions/",
+                {
+                  "Fn::GetAtt": [
+                    "getOneItemFunctionE3257B22",
+                    "Arn"
+                  ]
+                },
+                "/invocations"
+              ]
+            ]
+          }
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "ApiLambdaCrudDynamoDBExample/API/Default/shifts/{id}/GET/Resource"
+      }
+    },
+    "APIshiftsidPATCH373E598A": {
+      "Type": "AWS::ApiGateway::Method",
+      "Properties": {
+        "HttpMethod": "PATCH",
+        "ResourceId": {
+          "Ref": "APIshiftsid4C1FD363"
+        },
+        "RestApiId": {
+          "Ref": "API62EA1CFF"
+        },
+        "AuthorizationType": "NONE",
+        "Integration": {
+          "IntegrationHttpMethod": "POST",
+          "Type": "AWS_PROXY",
+          "Uri": {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":apigateway:",
+                {
+                  "Ref": "AWS::Region"
+                },
+                ":lambda:path/2015-03-31/functions/",
+                {
+                  "Fn::GetAtt": [
+                    "updateOneItemFunctionC21B0229",
+                    "Arn"
+                  ]
+                },
+                "/invocations"
+              ]
+            ]
+          }
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "ApiLambdaCrudDynamoDBExample/API/Default/shifts/{id}/PATCH/Resource"
+      }
+    },
+    "APIshiftsidDELETE41190791": {
+      "Type": "AWS::ApiGateway::Method",
+      "Properties": {
+        "HttpMethod": "DELETE",
+        "ResourceId": {
+          "Ref": "APIshiftsid4C1FD363"
+        },
+        "RestApiId": {
+          "Ref": "API62EA1CFF"
+        },
+        "AuthorizationType": "NONE",
+        "Integration": {
+          "IntegrationHttpMethod": "POST",
+          "Type": "AWS_PROXY",
+          "Uri": {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":apigateway:",
+                {
+                  "Ref": "AWS::Region"
+                },
+                ":lambda:path/2015-03-31/functions/",
+                {
+                  "Fn::GetAtt": [
+                    "deleteOneItemFunction5EF8E21B",
+                    "Arn"
+                  ]
+                },
+                "/invocations"
+              ]
+            ]
+          }
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "ApiLambdaCrudDynamoDBExample/API/Default/shifts/{id}/DELETE/Resource"
+      }
+    },
+    "APIshiftsidOPTIONSF90C3373": {
+      "Type": "AWS::ApiGateway::Method",
+      "Properties": {
+        "HttpMethod": "OPTIONS",
+        "ResourceId": {
+          "Ref": "APIshiftsid4C1FD363"
+        },
+        "RestApiId": {
+          "Ref": "API62EA1CFF"
+        },
+        "AuthorizationType": "NONE",
+        "Integration": {
+          "IntegrationResponses": [
+            {
+              "ResponseParameters": {
+                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,X-Amz-User-Agent'",
+                "method.response.header.Access-Control-Allow-Origin": "'*'",
+                "method.response.header.Access-Control-Allow-Credentials": "'false'",
+                "method.response.header.Access-Control-Allow-Methods": "'OPTIONS,GET,PUT,POST,DELETE'"
+              },
+              "StatusCode": "200"
+            }
+          ],
+          "PassthroughBehavior": "NEVER",
+          "RequestTemplates": {
+            "application/json": "{\"statusCode\": 200}"
+          },
+          "Type": "MOCK"
+        },
+        "MethodResponses": [
+          {
+            "ResponseParameters": {
+              "method.response.header.Access-Control-Allow-Headers": true,
+              "method.response.header.Access-Control-Allow-Methods": true,
+              "method.response.header.Access-Control-Allow-Credentials": true,
+              "method.response.header.Access-Control-Allow-Origin": true
+            },
+            "StatusCode": "200"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "ApiLambdaCrudDynamoDBExample/API/Default/shifts/{id}/OPTIONS/Resource"
+      }
+    },
     "shifts0987A12A": {
       "Type": "AWS::DynamoDB::Table",
       "Properties": {
@@ -213,11 +659,11 @@
               },
               ":",
               {
-                "Ref": "shiftsApiB9795C86"
+                "Ref": "API62EA1CFF"
               },
               "/",
               {
-                "Ref": "shiftsApiDeploymentStageprodD9DD8B65"
+                "Ref": "APIDeploymentStageprod278E75BA"
               },
               "/GET/shifts/{id}"
             ]
@@ -257,7 +703,7 @@
               },
               ":",
               {
-                "Ref": "shiftsApiB9795C86"
+                "Ref": "API62EA1CFF"
               },
               "/test-invoke-stage/GET/shifts/{id}"
             ]
@@ -454,11 +900,11 @@
               },
               ":",
               {
-                "Ref": "shiftsApiB9795C86"
+                "Ref": "API62EA1CFF"
               },
               "/",
               {
-                "Ref": "shiftsApiDeploymentStageprodD9DD8B65"
+                "Ref": "APIDeploymentStageprod278E75BA"
               },
               "/GET/shifts"
             ]
@@ -498,7 +944,7 @@
               },
               ":",
               {
-                "Ref": "shiftsApiB9795C86"
+                "Ref": "API62EA1CFF"
               },
               "/test-invoke-stage/GET/shifts"
             ]
@@ -695,11 +1141,11 @@
               },
               ":",
               {
-                "Ref": "shiftsApiB9795C86"
+                "Ref": "API62EA1CFF"
               },
               "/",
               {
-                "Ref": "shiftsApiDeploymentStageprodD9DD8B65"
+                "Ref": "APIDeploymentStageprod278E75BA"
               },
               "/POST/shifts"
             ]
@@ -739,7 +1185,7 @@
               },
               ":",
               {
-                "Ref": "shiftsApiB9795C86"
+                "Ref": "API62EA1CFF"
               },
               "/test-invoke-stage/POST/shifts"
             ]
@@ -936,11 +1382,11 @@
               },
               ":",
               {
-                "Ref": "shiftsApiB9795C86"
+                "Ref": "API62EA1CFF"
               },
               "/",
               {
-                "Ref": "shiftsApiDeploymentStageprodD9DD8B65"
+                "Ref": "APIDeploymentStageprod278E75BA"
               },
               "/PATCH/shifts/{id}"
             ]
@@ -980,7 +1426,7 @@
               },
               ":",
               {
-                "Ref": "shiftsApiB9795C86"
+                "Ref": "API62EA1CFF"
               },
               "/test-invoke-stage/PATCH/shifts/{id}"
             ]
@@ -1177,11 +1623,11 @@
               },
               ":",
               {
-                "Ref": "shiftsApiB9795C86"
+                "Ref": "API62EA1CFF"
               },
               "/",
               {
-                "Ref": "shiftsApiDeploymentStageprodD9DD8B65"
+                "Ref": "APIDeploymentStageprod278E75BA"
               },
               "/DELETE/shifts/{id}"
             ]
@@ -1221,7 +1667,7 @@
               },
               ":",
               {
-                "Ref": "shiftsApiB9795C86"
+                "Ref": "API62EA1CFF"
               },
               "/test-invoke-stage/DELETE/shifts/{id}"
             ]
@@ -1231,451 +1677,33 @@
       "Metadata": {
         "aws:cdk:path": "ApiLambdaCrudDynamoDBExample/deleteOneItemFunction/ApiPermission.Test.DELETE..shifts.{id}"
       }
-    },
-    "shiftsApiB9795C86": {
-      "Type": "AWS::ApiGateway::RestApi",
-      "Properties": {
-        "Name": "Shifts Service"
-      },
-      "Metadata": {
-        "aws:cdk:path": "ApiLambdaCrudDynamoDBExample/shiftsApi/Resource"
-      }
-    },
-    "shiftsApiDeploymentEE0A2B3B71e8e2e1a6617e10e7e16544b7472b6c": {
-      "Type": "AWS::ApiGateway::Deployment",
-      "Properties": {
-        "RestApiId": {
-          "Ref": "shiftsApiB9795C86"
-        },
-        "Description": "Automatically created by the RestApi construct"
-      },
-      "DependsOn": [
-        "shiftsApishiftsidDELETE09D2A785",
-        "shiftsApishiftsidGET1B625FFD",
-        "shiftsApishiftsidOPTIONS571CF13B",
-        "shiftsApishiftsidPATCHB55BA6DC",
-        "shiftsApishiftsid3C902A14",
-        "shiftsApishiftsGET2706DC70",
-        "shiftsApishiftsOPTIONS91BAEB83",
-        "shiftsApishiftsPOST26F72E67",
-        "shiftsApishiftsD1948668"
-      ],
-      "Metadata": {
-        "aws:cdk:path": "ApiLambdaCrudDynamoDBExample/shiftsApi/Deployment/Resource"
-      }
-    },
-    "shiftsApiDeploymentStageprodD9DD8B65": {
-      "Type": "AWS::ApiGateway::Stage",
-      "Properties": {
-        "RestApiId": {
-          "Ref": "shiftsApiB9795C86"
-        },
-        "DeploymentId": {
-          "Ref": "shiftsApiDeploymentEE0A2B3B71e8e2e1a6617e10e7e16544b7472b6c"
-        },
-        "StageName": "prod"
-      },
-      "Metadata": {
-        "aws:cdk:path": "ApiLambdaCrudDynamoDBExample/shiftsApi/DeploymentStage.prod/Resource"
-      }
-    },
-    "shiftsApiCloudWatchRole9EFB5B38": {
-      "Type": "AWS::IAM::Role",
-      "Properties": {
-        "AssumeRolePolicyDocument": {
-          "Statement": [
+    }
+  },
+  "Outputs": {
+    "APIEndpoint1793E782": {
+      "Value": {
+        "Fn::Join": [
+          "",
+          [
+            "https://",
             {
-              "Action": "sts:AssumeRole",
-              "Effect": "Allow",
-              "Principal": {
-                "Service": {
-                  "Fn::Join": [
-                    "",
-                    [
-                      "apigateway.",
-                      {
-                        "Ref": "AWS::URLSuffix"
-                      }
-                    ]
-                  ]
-                }
-              }
-            }
-          ],
-          "Version": "2012-10-17"
-        },
-        "ManagedPolicyArns": [
-          {
-            "Fn::Join": [
-              "",
-              [
-                "arn:",
-                {
-                  "Ref": "AWS::Partition"
-                },
-                ":iam::aws:policy/service-role/AmazonAPIGatewayPushToCloudWatchLogs"
-              ]
-            ]
-          }
-        ]
-      },
-      "Metadata": {
-        "aws:cdk:path": "ApiLambdaCrudDynamoDBExample/shiftsApi/CloudWatchRole/Resource"
-      }
-    },
-    "shiftsApiAccount66376AAA": {
-      "Type": "AWS::ApiGateway::Account",
-      "Properties": {
-        "CloudWatchRoleArn": {
-          "Fn::GetAtt": [
-            "shiftsApiCloudWatchRole9EFB5B38",
-            "Arn"
-          ]
-        }
-      },
-      "DependsOn": [
-        "shiftsApiB9795C86"
-      ],
-      "Metadata": {
-        "aws:cdk:path": "ApiLambdaCrudDynamoDBExample/shiftsApi/Account"
-      }
-    },
-    "shiftsApishiftsD1948668": {
-      "Type": "AWS::ApiGateway::Resource",
-      "Properties": {
-        "ParentId": {
-          "Fn::GetAtt": [
-            "shiftsApiB9795C86",
-            "RootResourceId"
-          ]
-        },
-        "PathPart": "shifts",
-        "RestApiId": {
-          "Ref": "shiftsApiB9795C86"
-        }
-      },
-      "Metadata": {
-        "aws:cdk:path": "ApiLambdaCrudDynamoDBExample/shiftsApi/Default/shifts/Resource"
-      }
-    },
-    "shiftsApishiftsGET2706DC70": {
-      "Type": "AWS::ApiGateway::Method",
-      "Properties": {
-        "HttpMethod": "GET",
-        "ResourceId": {
-          "Ref": "shiftsApishiftsD1948668"
-        },
-        "RestApiId": {
-          "Ref": "shiftsApiB9795C86"
-        },
-        "AuthorizationType": "NONE",
-        "Integration": {
-          "IntegrationHttpMethod": "POST",
-          "Type": "AWS_PROXY",
-          "Uri": {
-            "Fn::Join": [
-              "",
-              [
-                "arn:",
-                {
-                  "Ref": "AWS::Partition"
-                },
-                ":apigateway:",
-                {
-                  "Ref": "AWS::Region"
-                },
-                ":lambda:path/2015-03-31/functions/",
-                {
-                  "Fn::GetAtt": [
-                    "getAllItemsFunction0B7A913E",
-                    "Arn"
-                  ]
-                },
-                "/invocations"
-              ]
-            ]
-          }
-        }
-      },
-      "Metadata": {
-        "aws:cdk:path": "ApiLambdaCrudDynamoDBExample/shiftsApi/Default/shifts/GET/Resource"
-      }
-    },
-    "shiftsApishiftsPOST26F72E67": {
-      "Type": "AWS::ApiGateway::Method",
-      "Properties": {
-        "HttpMethod": "POST",
-        "ResourceId": {
-          "Ref": "shiftsApishiftsD1948668"
-        },
-        "RestApiId": {
-          "Ref": "shiftsApiB9795C86"
-        },
-        "AuthorizationType": "NONE",
-        "Integration": {
-          "IntegrationHttpMethod": "POST",
-          "Type": "AWS_PROXY",
-          "Uri": {
-            "Fn::Join": [
-              "",
-              [
-                "arn:",
-                {
-                  "Ref": "AWS::Partition"
-                },
-                ":apigateway:",
-                {
-                  "Ref": "AWS::Region"
-                },
-                ":lambda:path/2015-03-31/functions/",
-                {
-                  "Fn::GetAtt": [
-                    "createOneItemFunctionCAF71B6F",
-                    "Arn"
-                  ]
-                },
-                "/invocations"
-              ]
-            ]
-          }
-        }
-      },
-      "Metadata": {
-        "aws:cdk:path": "ApiLambdaCrudDynamoDBExample/shiftsApi/Default/shifts/POST/Resource"
-      }
-    },
-    "shiftsApishiftsOPTIONS91BAEB83": {
-      "Type": "AWS::ApiGateway::Method",
-      "Properties": {
-        "HttpMethod": "OPTIONS",
-        "ResourceId": {
-          "Ref": "shiftsApishiftsD1948668"
-        },
-        "RestApiId": {
-          "Ref": "shiftsApiB9795C86"
-        },
-        "AuthorizationType": "NONE",
-        "Integration": {
-          "IntegrationResponses": [
-            {
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,X-Amz-User-Agent'",
-                "method.response.header.Access-Control-Allow-Origin": "'*'",
-                "method.response.header.Access-Control-Allow-Credentials": "'false'",
-                "method.response.header.Access-Control-Allow-Methods": "'OPTIONS,GET,PUT,POST,DELETE'"
-              },
-              "StatusCode": "200"
-            }
-          ],
-          "PassthroughBehavior": "NEVER",
-          "RequestTemplates": {
-            "application/json": "{\"statusCode\": 200}"
-          },
-          "Type": "MOCK"
-        },
-        "MethodResponses": [
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Headers": true,
-              "method.response.header.Access-Control-Allow-Methods": true,
-              "method.response.header.Access-Control-Allow-Credentials": true,
-              "method.response.header.Access-Control-Allow-Origin": true
+              "Ref": "API62EA1CFF"
             },
-            "StatusCode": "200"
-          }
-        ]
-      },
-      "Metadata": {
-        "aws:cdk:path": "ApiLambdaCrudDynamoDBExample/shiftsApi/Default/shifts/OPTIONS/Resource"
-      }
-    },
-    "shiftsApishiftsid3C902A14": {
-      "Type": "AWS::ApiGateway::Resource",
-      "Properties": {
-        "ParentId": {
-          "Ref": "shiftsApishiftsD1948668"
-        },
-        "PathPart": "{id}",
-        "RestApiId": {
-          "Ref": "shiftsApiB9795C86"
-        }
-      },
-      "Metadata": {
-        "aws:cdk:path": "ApiLambdaCrudDynamoDBExample/shiftsApi/Default/shifts/{id}/Resource"
-      }
-    },
-    "shiftsApishiftsidGET1B625FFD": {
-      "Type": "AWS::ApiGateway::Method",
-      "Properties": {
-        "HttpMethod": "GET",
-        "ResourceId": {
-          "Ref": "shiftsApishiftsid3C902A14"
-        },
-        "RestApiId": {
-          "Ref": "shiftsApiB9795C86"
-        },
-        "AuthorizationType": "NONE",
-        "Integration": {
-          "IntegrationHttpMethod": "POST",
-          "Type": "AWS_PROXY",
-          "Uri": {
-            "Fn::Join": [
-              "",
-              [
-                "arn:",
-                {
-                  "Ref": "AWS::Partition"
-                },
-                ":apigateway:",
-                {
-                  "Ref": "AWS::Region"
-                },
-                ":lambda:path/2015-03-31/functions/",
-                {
-                  "Fn::GetAtt": [
-                    "getOneItemFunctionE3257B22",
-                    "Arn"
-                  ]
-                },
-                "/invocations"
-              ]
-            ]
-          }
-        }
-      },
-      "Metadata": {
-        "aws:cdk:path": "ApiLambdaCrudDynamoDBExample/shiftsApi/Default/shifts/{id}/GET/Resource"
-      }
-    },
-    "shiftsApishiftsidPATCHB55BA6DC": {
-      "Type": "AWS::ApiGateway::Method",
-      "Properties": {
-        "HttpMethod": "PATCH",
-        "ResourceId": {
-          "Ref": "shiftsApishiftsid3C902A14"
-        },
-        "RestApiId": {
-          "Ref": "shiftsApiB9795C86"
-        },
-        "AuthorizationType": "NONE",
-        "Integration": {
-          "IntegrationHttpMethod": "POST",
-          "Type": "AWS_PROXY",
-          "Uri": {
-            "Fn::Join": [
-              "",
-              [
-                "arn:",
-                {
-                  "Ref": "AWS::Partition"
-                },
-                ":apigateway:",
-                {
-                  "Ref": "AWS::Region"
-                },
-                ":lambda:path/2015-03-31/functions/",
-                {
-                  "Fn::GetAtt": [
-                    "updateOneItemFunctionC21B0229",
-                    "Arn"
-                  ]
-                },
-                "/invocations"
-              ]
-            ]
-          }
-        }
-      },
-      "Metadata": {
-        "aws:cdk:path": "ApiLambdaCrudDynamoDBExample/shiftsApi/Default/shifts/{id}/PATCH/Resource"
-      }
-    },
-    "shiftsApishiftsidDELETE09D2A785": {
-      "Type": "AWS::ApiGateway::Method",
-      "Properties": {
-        "HttpMethod": "DELETE",
-        "ResourceId": {
-          "Ref": "shiftsApishiftsid3C902A14"
-        },
-        "RestApiId": {
-          "Ref": "shiftsApiB9795C86"
-        },
-        "AuthorizationType": "NONE",
-        "Integration": {
-          "IntegrationHttpMethod": "POST",
-          "Type": "AWS_PROXY",
-          "Uri": {
-            "Fn::Join": [
-              "",
-              [
-                "arn:",
-                {
-                  "Ref": "AWS::Partition"
-                },
-                ":apigateway:",
-                {
-                  "Ref": "AWS::Region"
-                },
-                ":lambda:path/2015-03-31/functions/",
-                {
-                  "Fn::GetAtt": [
-                    "deleteOneItemFunction5EF8E21B",
-                    "Arn"
-                  ]
-                },
-                "/invocations"
-              ]
-            ]
-          }
-        }
-      },
-      "Metadata": {
-        "aws:cdk:path": "ApiLambdaCrudDynamoDBExample/shiftsApi/Default/shifts/{id}/DELETE/Resource"
-      }
-    },
-    "shiftsApishiftsidOPTIONS571CF13B": {
-      "Type": "AWS::ApiGateway::Method",
-      "Properties": {
-        "HttpMethod": "OPTIONS",
-        "ResourceId": {
-          "Ref": "shiftsApishiftsid3C902A14"
-        },
-        "RestApiId": {
-          "Ref": "shiftsApiB9795C86"
-        },
-        "AuthorizationType": "NONE",
-        "Integration": {
-          "IntegrationResponses": [
+            ".execute-api.",
             {
-              "ResponseParameters": {
-                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,X-Amz-User-Agent'",
-                "method.response.header.Access-Control-Allow-Origin": "'*'",
-                "method.response.header.Access-Control-Allow-Credentials": "'false'",
-                "method.response.header.Access-Control-Allow-Methods": "'OPTIONS,GET,PUT,POST,DELETE'"
-              },
-              "StatusCode": "200"
-            }
-          ],
-          "PassthroughBehavior": "NEVER",
-          "RequestTemplates": {
-            "application/json": "{\"statusCode\": 200}"
-          },
-          "Type": "MOCK"
-        },
-        "MethodResponses": [
-          {
-            "ResponseParameters": {
-              "method.response.header.Access-Control-Allow-Headers": true,
-              "method.response.header.Access-Control-Allow-Methods": true,
-              "method.response.header.Access-Control-Allow-Credentials": true,
-              "method.response.header.Access-Control-Allow-Origin": true
+              "Ref": "AWS::Region"
             },
-            "StatusCode": "200"
-          }
+            ".",
+            {
+              "Ref": "AWS::URLSuffix"
+            },
+            "/",
+            {
+              "Ref": "APIDeploymentStageprod278E75BA"
+            },
+            "/"
+          ]
         ]
-      },
-      "Metadata": {
-        "aws:cdk:path": "ApiLambdaCrudDynamoDBExample/shiftsApi/Default/shifts/{id}/OPTIONS/Resource"
       }
     }
   },
@@ -1739,34 +1767,6 @@
     "deleteOneItemFunctionCodeArtifactHash11A8B389": {
       "Type": "String",
       "Description": "Artifact hash for asset \"ApiLambdaCrudDynamoDBExample/deleteOneItemFunction/Code\""
-    }
-  },
-  "Outputs": {
-    "shiftsApiEndpoint7C594CCE": {
-      "Value": {
-        "Fn::Join": [
-          "",
-          [
-            "https://",
-            {
-              "Ref": "shiftsApiB9795C86"
-            },
-            ".execute-api.",
-            {
-              "Ref": "AWS::Region"
-            },
-            ".",
-            {
-              "Ref": "AWS::URLSuffix"
-            },
-            "/",
-            {
-              "Ref": "shiftsApiDeploymentStageprodD9DD8B65"
-            },
-            "/"
-          ]
-        ]
-      }
     }
   }
 }
